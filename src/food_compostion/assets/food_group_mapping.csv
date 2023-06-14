@@ -1,0 +1,543 @@
+code,grup
+A001,Cereals and Millets
+A002,Cereals and Millets
+A003,Cereals and Millets
+A004,Cereals and Millets
+A005,Cereals and Millets
+A006,Cereals and Millets
+A007,Cereals and Millets
+A008,Cereals and Millets
+A009,Cereals and Millets
+A010,Cereals and Millets
+A011,Cereals and Millets
+A012,Cereals and Millets
+A013,Cereals and Millets
+A014,Cereals and Millets
+A015,Cereals and Millets
+A016,Cereals and Millets
+A017,Cereals and Millets
+A018,Cereals and Millets
+A019,Cereals and Millets
+A020,Cereals and Millets
+A021,Cereals and Millets
+A022,Cereals and Millets
+A023,Cereals and Millets
+A024,Cereals and Millets
+B001,Grain Legumes
+B002,Grain Legumes
+B003,Grain Legumes
+B004,Grain Legumes
+B005,Grain Legumes
+B006,Grain Legumes
+B007,Grain Legumes
+B008,Grain Legumes
+B009,Grain Legumes
+B010,Grain Legumes
+B011,Grain Legumes
+B012,Grain Legumes
+B013,Grain Legumes
+B014,Grain Legumes
+B015,Grain Legumes
+B016,Grain Legumes
+B017,Grain Legumes
+B018,Grain Legumes
+B019,Grain Legumes
+B020,Grain Legumes
+B021,Grain Legumes
+B022,Grain Legumes
+B023,Grain Legumes
+B024,Grain Legumes
+B025,Grain Legumes
+C001,Green Leafy Vegetables
+C002,Green Leafy Vegetables
+C003,Green Leafy Vegetables
+C004,Green Leafy Vegetables
+C005,Green Leafy Vegetables
+C006,Green Leafy Vegetables
+C007,Green Leafy Vegetables
+C008,Green Leafy Vegetables
+C009,Green Leafy Vegetables
+C010,Green Leafy Vegetables
+C011,Green Leafy Vegetables
+C012,Green Leafy Vegetables
+C013,Green Leafy Vegetables
+C014,Green Leafy Vegetables
+C015,Green Leafy Vegetables
+C016,Green Leafy Vegetables
+C017,Green Leafy Vegetables
+C018,Green Leafy Vegetables
+C019,Green Leafy Vegetables
+C020,Green Leafy Vegetables
+C021,Green Leafy Vegetables
+C022,Green Leafy Vegetables
+C023,Green Leafy Vegetables
+C024,Green Leafy Vegetables
+C025,Green Leafy Vegetables
+C026,Green Leafy Vegetables
+C027,Green Leafy Vegetables
+C028,Green Leafy Vegetables
+C029,Green Leafy Vegetables
+C030,Green Leafy Vegetables
+C031,Green Leafy Vegetables
+C032,Green Leafy Vegetables
+C033,Green Leafy Vegetables
+C034,Green Leafy Vegetables
+D001,Other Vegetables
+D002,Other Vegetables
+D003,Other Vegetables
+D004,Other Vegetables
+D005,Other Vegetables
+D006,Other Vegetables
+D007,Other Vegetables
+D008,Other Vegetables
+D009,Other Vegetables
+D010,Other Vegetables
+D011,Other Vegetables
+D012,Other Vegetables
+D013,Other Vegetables
+D014,Other Vegetables
+D015,Other Vegetables
+D016,Other Vegetables
+D017,Other Vegetables
+D018,Other Vegetables
+D019,Other Vegetables
+D020,Other Vegetables
+D021,Other Vegetables
+D022,Other Vegetables
+D023,Other Vegetables
+D024,Other Vegetables
+D025,Other Vegetables
+D026,Other Vegetables
+D027,Other Vegetables
+D028,Other Vegetables
+D029,Other Vegetables
+D030,Other Vegetables
+D031,Other Vegetables
+D032,Other Vegetables
+D033,Other Vegetables
+D034,Other Vegetables
+D035,Other Vegetables
+D036,Other Vegetables
+D037,Other Vegetables
+D038,Other Vegetables
+D039,Other Vegetables
+D040,Other Vegetables
+D041,Other Vegetables
+D042,Other Vegetables
+D043,Other Vegetables
+D044,Other Vegetables
+D045,Other Vegetables
+D046,Other Vegetables
+D047,Other Vegetables
+D048,Other Vegetables
+D049,Other Vegetables
+D050,Other Vegetables
+D051,Other Vegetables
+D052,Other Vegetables
+D053,Other Vegetables
+D054,Other Vegetables
+D055,Other Vegetables
+D056,Other Vegetables
+D057,Other Vegetables
+D058,Other Vegetables
+D059,Other Vegetables
+D060,Other Vegetables
+D061,Other Vegetables
+D062,Other Vegetables
+D063,Other Vegetables
+D064,Other Vegetables
+D065,Other Vegetables
+D066,Other Vegetables
+D067,Other Vegetables
+D068,Other Vegetables
+D069,Other Vegetables
+D070,Other Vegetables
+D071,Other Vegetables
+D072,Other Vegetables
+D073,Other Vegetables
+D074,Other Vegetables
+D075,Other Vegetables
+D076,Other Vegetables
+D077,Other Vegetables
+D078,Other Vegetables
+E001,Fruits
+E002,Fruits
+E003,Fruits
+E004,Fruits
+E005,Fruits
+E006,Fruits
+E007,Fruits
+E008,Fruits
+E009,Fruits
+E010,Fruits
+E011,Fruits
+E012,Fruits
+E013,Fruits
+E014,Fruits
+E015,Fruits
+E016,Fruits
+E017,Fruits
+E018,Fruits
+E019,Fruits
+E020,Fruits
+E021,Fruits
+E022,Fruits
+E023,Fruits
+E024,Fruits
+E025,Fruits
+E026,Fruits
+E027,Fruits
+E028,Fruits
+E029,Fruits
+E030,Fruits
+E031,Fruits
+E032,Fruits
+E033,Fruits
+E034,Fruits
+E035,Fruits
+E036,Fruits
+E037,Fruits
+E038,Fruits
+E039,Fruits
+E040,Fruits
+E041,Fruits
+E042,Fruits
+E043,Fruits
+E044,Fruits
+E045,Fruits
+E046,Fruits
+E047,Fruits
+E048,Fruits
+E049,Fruits
+E050,Fruits
+E051,Fruits
+E052,Fruits
+E053,Fruits
+E054,Fruits
+E055,Fruits
+E056,Fruits
+E057,Fruits
+E058,Fruits
+E059,Fruits
+E060,Fruits
+E061,Fruits
+E062,Fruits
+E063,Fruits
+E064,Fruits
+E065,Fruits
+E066,Fruits
+E067,Fruits
+E068,Fruits
+F001,Roots and Tubers
+F002,Roots and Tubers
+F003,Roots and Tubers
+F004,Roots and Tubers
+F005,Roots and Tubers
+F006,Roots and Tubers
+F007,Roots and Tubers
+F008,Roots and Tubers
+F009,Roots and Tubers
+F010,Roots and Tubers
+F011,Roots and Tubers
+F012,Roots and Tubers
+F013,Roots and Tubers
+F014,Roots and Tubers
+F015,Roots and Tubers
+F016,Roots and Tubers
+F017,Roots and Tubers
+F018,Roots and Tubers
+F019,Roots and Tubers
+G001,Condiments and Spices
+G002,Condiments and Spices
+G003,Condiments and Spices
+G004,Condiments and Spices
+G005,Condiments and Spices
+G006,Condiments and Spices
+G007,Condiments and Spices
+G008,Condiments and Spices
+G009,Condiments and Spices
+G010,Condiments and Spices
+G011,Condiments and Spices
+G012,Condiments and Spices
+G013,Condiments and Spices
+G014,Condiments and Spices
+G015,Condiments and Spices
+G016,Condiments and Spices
+G017,Condiments and Spices
+G018,Condiments and Spices
+G019,Condiments and Spices
+G020,Condiments and Spices
+G021,Condiments and Spices
+G022,Condiments and Spices
+G023,Condiments and Spices
+G024,Condiments and Spices
+G025,Condiments and Spices
+G026,Condiments and Spices
+G027,Condiments and Spices
+G028,Condiments and Spices
+G029,Condiments and Spices
+G030,Condiments and Spices
+G031,Condiments and Spices
+G032,Condiments and Spices
+G033,Condiments and Spices
+H001,Nuts and Oil Seeds
+H002,Nuts and Oil Seeds
+H003,Nuts and Oil Seeds
+H004,Nuts and Oil Seeds
+H005,Nuts and Oil Seeds
+H006,Nuts and Oil Seeds
+H007,Nuts and Oil Seeds
+H008,Nuts and Oil Seeds
+H009,Nuts and Oil Seeds
+H010,Nuts and Oil Seeds
+H011,Nuts and Oil Seeds
+H012,Nuts and Oil Seeds
+H013,Nuts and Oil Seeds
+H014,Nuts and Oil Seeds
+H015,Nuts and Oil Seeds
+H016,Nuts and Oil Seeds
+H017,Nuts and Oil Seeds
+H018,Nuts and Oil Seeds
+H019,Nuts and Oil Seeds
+H020,Nuts and Oil Seeds
+H021,Nuts and Oil Seeds
+I001,Sugars
+I002,Sugars
+J001,Mushrooms
+J002,Mushrooms
+J003,Mushrooms
+J004,Mushrooms
+K001,Miscellaneous Foods
+K002,Miscellaneous Foods
+L001,Milk and Milk Products
+L002,Milk and Milk Products
+L003,Milk and Milk Products
+L004,Milk and Milk Products
+M001,Egg and Egg Products
+M002,Egg and Egg Products
+M003,Egg and Egg Products
+M004,Egg and Egg Products
+M005,Egg and Egg Products
+M006,Egg and Egg Products
+M007,Egg and Egg Products
+M008,Egg and Egg Products
+M009,Egg and Egg Products
+M010,Egg and Egg Products
+M011,Egg and Egg Products
+M012,Egg and Egg Products
+M013,Egg and Egg Products
+M014,Egg and Egg Products
+M015,Egg and Egg Products
+N001,Poultry
+N002,Poultry
+N003,Poultry
+N004,Poultry
+N005,Poultry
+N006,Poultry
+N007,Poultry
+N008,Poultry
+N009,Poultry
+N010,Poultry
+N011,Poultry
+N012,Poultry
+N013,Poultry
+N014,Poultry
+N015,Poultry
+N016,Poultry
+N017,Poultry
+N018,Poultry
+N019,Poultry
+O001,Animal Meat
+O002,Animal Meat
+O003,Animal Meat
+O004,Animal Meat
+O005,Animal Meat
+O006,Animal Meat
+O007,Animal Meat
+O008,Animal Meat
+O009,Animal Meat
+O010,Animal Meat
+O011,Animal Meat
+O012,Animal Meat
+O013,Animal Meat
+O014,Animal Meat
+O015,Animal Meat
+O016,Animal Meat
+O017,Animal Meat
+O018,Animal Meat
+O019,Animal Meat
+O020,Animal Meat
+O021,Animal Meat
+O022,Animal Meat
+O023,Animal Meat
+O024,Animal Meat
+O025,Animal Meat
+O026,Animal Meat
+O027,Animal Meat
+O028,Animal Meat
+O029,Animal Meat
+O030,Animal Meat
+O031,Animal Meat
+O032,Animal Meat
+O033,Animal Meat
+O034,Animal Meat
+O035,Animal Meat
+O036,Animal Meat
+O037,Animal Meat
+O038,Animal Meat
+O039,Animal Meat
+O040,Animal Meat
+O041,Animal Meat
+O042,Animal Meat
+O043,Animal Meat
+O044,Animal Meat
+O045,Animal Meat
+O046,Animal Meat
+O047,Animal Meat
+O048,Animal Meat
+O049,Animal Meat
+O050,Animal Meat
+O051,Animal Meat
+O052,Animal Meat
+O053,Animal Meat
+O054,Animal Meat
+O055,Animal Meat
+O056,Animal Meat
+O057,Animal Meat
+O058,Animal Meat
+O059,Animal Meat
+O060,Animal Meat
+O061,Animal Meat
+O062,Animal Meat
+O063,Animal Meat
+P001,Marine Fish
+P002,Marine Fish
+P003,Marine Fish
+P004,Marine Fish
+P005,Marine Fish
+P006,Marine Fish
+P007,Marine Fish
+P008,Marine Fish
+P009,Marine Fish
+P010,Marine Fish
+P011,Marine Fish
+P012,Marine Fish
+P013,Marine Fish
+P014,Marine Fish
+P015,Marine Fish
+P016,Marine Fish
+P017,Marine Fish
+P018,Marine Fish
+P019,Marine Fish
+P020,Marine Fish
+P021,Marine Fish
+P022,Marine Fish
+P023,Marine Fish
+P024,Marine Fish
+P025,Marine Fish
+P026,Marine Fish
+P027,Marine Fish
+P028,Marine Fish
+P029,Marine Fish
+P030,Marine Fish
+P031,Marine Fish
+P032,Marine Fish
+P033,Marine Fish
+P034,Marine Fish
+P035,Marine Fish
+P036,Marine Fish
+P037,Marine Fish
+P038,Marine Fish
+P039,Marine Fish
+P040,Marine Fish
+P041,Marine Fish
+P042,Marine Fish
+P043,Marine Fish
+P044,Marine Fish
+P045,Marine Fish
+P046,Marine Fish
+P047,Marine Fish
+P048,Marine Fish
+P049,Marine Fish
+P050,Marine Fish
+P051,Marine Fish
+P052,Marine Fish
+P053,Marine Fish
+P054,Marine Fish
+P055,Marine Fish
+P056,Marine Fish
+P057,Marine Fish
+P058,Marine Fish
+P059,Marine Fish
+P060,Marine Fish
+P061,Marine Fish
+P062,Marine Fish
+P063,Marine Fish
+P064,Marine Fish
+P065,Marine Fish
+P066,Marine Fish
+P067,Marine Fish
+P068,Marine Fish
+P069,Marine Fish
+P070,Marine Fish
+P071,Marine Fish
+P072,Marine Fish
+P073,Marine Fish
+P074,Marine Fish
+P075,Marine Fish
+P076,Marine Fish
+P077,Marine Fish
+P078,Marine Fish
+P079,Marine Fish
+P080,Marine Fish
+P081,Marine Fish
+P082,Marine Fish
+P083,Marine Fish
+P084,Marine Fish
+P085,Marine Fish
+P086,Marine Fish
+P087,Marine Fish
+P088,Marine Fish
+P089,Marine Fish
+P090,Marine Fish
+P091,Marine Fish
+P092,Marine Fish
+Q001,Marine Shellfish
+Q002,Marine Shellfish
+Q003,Marine Shellfish
+Q004,Marine Shellfish
+Q005,Marine Shellfish
+Q006,Marine Shellfish
+Q007,Marine Shellfish
+Q008,Marine Shellfish
+R001,Marine Mollusks
+R002,Marine Mollusks
+R003,Marine Mollusks
+R004,Marine Mollusks
+R005,Marine Mollusks
+R006,Marine Mollusks
+R007,Marine Mollusks
+S001,Fresh Water Fish and Shellfish
+S002,Fresh Water Fish and Shellfish
+S003,Fresh Water Fish and Shellfish
+S004,Fresh Water Fish and Shellfish
+S005,Fresh Water Fish and Shellfish
+S006,Fresh Water Fish and Shellfish
+S007,Fresh Water Fish and Shellfish
+S008,Fresh Water Fish and Shellfish
+S009,Fresh Water Fish and Shellfish
+S010,Fresh Water Fish and Shellfish
+T001,Edible Oils and Fats
+T002,Edible Oils and Fats
+T003,Edible Oils and Fats
+T004,Edible Oils and Fats
+T005,Edible Oils and Fats
+T006,Edible Oils and Fats
+T007,Edible Oils and Fats
+T008,Edible Oils and Fats
+T009,Edible Oils and Fats
+T010,Edible Oils and Fats
+T011,Edible Oils and Fats
+T012,Edible Oils and Fats
+T013,Edible Oils and Fats
+T014,Edible Oils and Fats

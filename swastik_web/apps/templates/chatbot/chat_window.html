@@ -1,0 +1,84 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Conversational AI {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<style>
+    #chat-window {
+      height: calc(100vh - 300px);
+      overflow: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    #chat-input {
+      margin-top: 10px;
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    #chat-submit {
+      margin-top: 10px;
+      border: none;
+      background-color: #0099ff;
+      color: #fff;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    #clear-chat {
+      margin-top: 10px;
+      border: none;
+      background-color: #cc0000;
+      color: #fff;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="container-fluid pt-3">
+    <div id="chat-window">
+      {% for message in messages %}
+        {% if message.from_user %}
+          <p><strong>{{ request.user.username }}:</strong> {{ message.text }}</p>
+        {% else %}
+          <p><strong>Chatbot : </strong> {{ message.text }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <form method="post">
+      {% csrf_token %}
+      <input type="text" id="chat-input" name="message" placeholder="Type your message here">
+
+      <button type="submit" id="chat-submit">Send</button>
+      <button type="submit" id="clear-chat-btn">Clear Chat</button>
+    </form>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+<script>
+    // Clear chat button functionality
+    $(function() {
+      $('#clear-chat-btn').click(function(event) {
+        event.preventDefault();
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        $.ajax({
+          url: "{% url 'chatbot:clear_chat' %}",
+          type: "POST",
+          data: {'csrfmiddlewaretoken': csrftoken},
+          success: function() {
+            window.location.href = "{% url 'chatbot:chatbot' %}";
+          }
+        });
+      });
+    });
+  </script>
+
+{% endblock javascripts %}

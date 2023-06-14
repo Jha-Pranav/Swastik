@@ -1,0 +1,32 @@
+repos:
+  - repo: local
+    hooks:
+      - id: delete-files
+        name: Delete specified files and directories
+        entry: python delete_files_and_dirs.py
+        language: system
+        args: ["."]
+        pass_filenames: false
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3.9
+        args: [--line-length=79]
+        exclude: |
+          ^\..*
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: [--max-line-length=80]
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.6
+    hooks:
+      - id: prettier
+        name: Prettier
+        files: '\.(js|json|css|scss|less|graphql|md|html|yaml|yml)$'
+        args: [--write]

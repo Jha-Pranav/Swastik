@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "web"
+version = "0.1.0"
+description = "Django App"
+authors = ["Pranav Jha <pranavjha1993@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.2"
+faker = "^18.4.0"
+bcrypt = "^4.0.1"
+pillow = "^9.5.0"
+argon2-cffi = "^21.3.0"
+pyllamacpp = "^1.0.6"
+transformers = "^4.28.1"
+pre-commit = "^3.2.2"
+debugpy = "^1.6.7"
+ipykernel = "^6.22.0"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+django-pandas = "^0.6.6"
+django-environ = "^0.10.0"
+django-extensions = "^3.2.1"
+dash = "^2.9.3"
+bokeh = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

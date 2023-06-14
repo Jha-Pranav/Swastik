@@ -1,0 +1,423 @@
+code,name
+name,Food Name
+scie,Scientific Name
+lang,Local Name
+local_name,
+grup,Food Group
+regn,No. of Regions
+tags,Tags
+enerc,Energy
+enerc_e,
+water,Moisture
+water_e,
+ash,Ash
+ash_e,
+vit,Vitamins
+vit_e,
+fatce,Total Fat
+fatce_e,
+cholc,Cholesterol
+cholc_e,
+fibtg,Dietary Fiber
+fibtg_e,
+choavldf,Carbohydrate
+choavldf_e,
+protcnt,Protein
+protcnt_e,
+amiac,Amino acids
+amiac_e,
+cartoid,Carotenoids
+cartoid_e,
+polyph,Polyphenols
+polyph_e,
+phystr,Phytosterols
+phystr_e,
+tocph,Tocopherols
+tocph_e,
+toctr,Tocotrienols
+toctr_e,
+orgac,Organic acids
+orgac_e,
+phytac,Phytate
+phytac_e,
+sapon,Saponins
+sapon_e,
+mnrleq,Essential Quantity Minerals
+mnrleq_e,
+mnrlet,Essential Trace Minerals
+mnrlet_e,
+mnrlpet,Possibly essential Trace Minerals
+mnrlpet_e,
+mnrlnet,Non-essential Trace Minerals
+mnrlnet_e,
+mnrltx,Toxic Minerals
+mnrltx_e,
+vita,Vitamin A
+vita_e,
+vitb,Vitamin B
+vitb_e,
+vitc,Ascorbic acids (C)
+vitc_e,
+vitd,Vitamin D
+vitd_e,
+vite,α-Tocopherol equivalent (E)
+vite_e,
+vitk,Vitamin K
+vitk_e,
+fasat,Saturated Fatty acids
+fasat_e,
+fauns,Unsaturated Fatty acids
+fauns_e,
+faess,Essential Fatty acids
+faess_e,
+facis,Cis Fatty acids
+facis_e,
+fatrn,Trans Fatty acids
+fatrn_e,
+fams,Monounsaturated Fatty acids
+fams_e,
+fapu,Polyunsaturated Fatty acids
+fapu_e,
+facn3,Cis ω-3 Fatty acids
+facn3_e,
+facn6,Cis ω-6 Fatty acids
+facn6_e,
+facn9,Cis ω-9 Fatty acids
+facn9_e,
+facn5,Cis ω-5 Fatty acids
+facn5_e,
+facn7,Cis ω-7 Fatty acids
+facn7_e,
+fibins,Insoluble Dietary Fiber
+fibins_e,
+fibsol,Soluble Dietary Fiber
+fibsol_e,
+cho,Available CHO
+cho_e,
+starch,Starch
+starch_e,
+olsac,Oligosaccharides
+olsac_e,
+fsugar,Free Sugars
+fsugar_e,
+amiace,Essential Amino acids
+amiace_e,
+amiacce,Conditionally essential Amino acids
+amiacce_e,
+amiacne,Non-essential Amino acids
+amiacne_e,
+retol,Retinol
+retol_e,
+thia,Thiamine (B1)
+thia_e,
+ribf,Riboflavin (B2)
+ribf_e,
+nia,Niacin (B3)
+nia_e,
+pantac,Pantothenic acid (B5)
+pantac_e,
+vitb6c,Total B6
+vitb6c_e,
+biot,Biotin (B7)
+biot_e,
+folsum,Folates (B9)
+folsum_e,
+ergcal,Ergocalciferol (D2)
+ergcal_e,
+chocal,Cholecalciferol (D3)
+chocal_e,
+doh25,25-OH-D3
+doh25_e,
+tocpha,α-Tocopherol
+tocpha_e,
+tocphb,β-Tocopherol
+tocphb_e,
+tocphg,γ-Tocopherol
+tocphg_e,
+tocphd,δ-Tocopherol
+tocphd_e,
+toctra,α-Tocotrienol
+toctra_e,
+toctrb,β-Tocotrienol
+toctrb_e,
+toctrg,γ-Tocotrienol
+toctrg_e,
+toctrd,δ-Tocotrienol
+toctrd_e,
+vitk1,Phylloquinones (K1)
+vitk1_e,
+vitk2,Menaquinones (K2)
+vitk2_e,
+lutn,Lutein
+lutn_e,
+zea,Zeaxanthin
+zea_e,
+lycpn,Lycopene
+lycpn_e,
+crypxb,β-Cryptoxanthin
+crypxb_e,
+cartg,γ-Carotene
+cartg_e,
+carta,α-Carotene
+carta_e,
+cartb,β-Carotene
+cartb_e,
+al,Aluminium (Al)
+al_e,
+as,Arsenic (As)
+as_e,
+cd,Cadmium (Cd)
+cd_e,
+ca,Calcium (Ca)
+ca_e,
+cr,Chromium (Cr)
+cr_e,
+co,Cobalt (Co)
+co_e,
+cu,Copper (Cu)
+cu_e,
+fe,Iron (Fe)
+fe_e,
+pb,Lead (Pb)
+pb_e,
+li,Lithium (Li)
+li_e,
+mg,Magnesium (Mg)
+mg_e,
+mn,Manganese (Mn)
+mn_e,
+hg,Mercury (Hg)
+hg_e,
+mo,Molybdenum (Mo)
+mo_e,
+ni,Nickel (Ni)
+ni_e,
+p,Phosphorus (P)
+p_e,
+k,Potassium (K)
+k_e,
+se,Selenium (Se)
+se_e,
+na,Sodium (Na)
+na_e,
+zn,Zinc (Zn)
+zn_e,
+frus,Fructose
+frus_e,
+glus,Glucose
+glus_e,
+sucs,Sucrose
+sucs_e,
+mals,Maltose
+mals_e,
+lactose,Lactose
+lactose_e,
+f4d0,Butyric acid (C4:0)
+f4d0_e,
+f6d0,Caproic acid (C6:0)
+f6d0_e,
+f8d0,Caprylic acid (C8:0)
+f8d0_e,
+f10d0,Capric acid (C10:0)
+f10d0_e,
+f12d0,Lauric acid (C12:0)
+f12d0_e,
+f14d0,Myristic acid (C14:0)
+f14d0_e,
+f16d0,Palmitic acid (C16:0)
+f16d0_e,
+f18d0,Stearic acid (C18:0)
+f18d0_e,
+f20d0,Arachidic acid (C20:0)
+f20d0_e,
+f22d0,Behenic acid (C22:0)
+f22d0_e,
+f24d0,Lignoceric acid (C24:0)
+f24d0_e,
+f14d1cn5,Myristoleic acid (C14:1)
+f14d1cn5_e,
+f16d1cn7,Palmitoleic acid (C16:1)
+f16d1cn7_e,
+f18d1cn9,Oleic acid (C18:1n9)
+f18d1cn9_e,
+f18d1tn9,Elaidic acid (C18:1n9t)
+f18d1tn9_e,
+f20d1cn9,Eicosenoic acid (C20:1n9)
+f20d1cn9_e,
+f22d1cn9,Erucic acid (C22:1n9)
+f22d1cn9_e,
+f24d1cn9,Nervonic acid (C24:1n9)
+f24d1cn9_e,
+f18d2cn6,Linoleic acid (C18:2n6)
+f18d2cn6_e,
+f20d2n6,Eicosadienoic acid (C20:2)
+f20d2n6_e,
+f18d3n3,α-Linolenic acid (C18:3n3)
+f18d3n3_e,
+f20d4n6,Arachidonic acid (C20:4n6)
+f20d4n6_e,
+f11d0,Undecanoic acid (C11:0)
+f11d0_e,
+f15d0,Pentadecanoic acid (C15:0)
+f15d0_e,
+f20d3n6,Eicosatrienoic acid (C20:3n6)
+f20d3n6_e,
+f20d5n3,Eicosapentaenoic acid (C20:5n3)
+f20d5n3_e,
+f22d6n3,Docosahexaenoic acid (C22:6n3)
+f22d6n3_e,
+f22d2n6,Docosadienoic acid (C22:2)
+f22d2n6_e,
+f22d5n3,Docosapentaenoic acid (C22:5n3)
+f22d5n3_e,
+his,Histidine
+his_e,
+ile,Isoleucine
+ile_e,
+leu,Leucine
+leu_e,
+lys,Lysine
+lys_e,
+met,Methionine
+met_e,
+cys,Cysteine
+cys_e,
+phe,Phenylalanine
+phe_e,
+thr,Threonine
+thr_e,
+trp,Tryptophan
+trp_e,
+val,Valine
+val_e,
+ala,Alanine
+ala_e,
+arg,Arginine
+arg_e,
+asp,Aspartic acid
+asp_e,
+glu,Glutamic acid
+glu_e,
+gly,Glycine
+gly_e,
+pro,Proline
+pro_e,
+ser,Serine
+ser_e,
+tyr,Tyrosine
+tyr_e,
+oxalt,Oxalates
+oxalt_e,
+oxals,Soluble Oxalate
+oxals_e,
+oxali,Insoluble Oxalate
+oxali_e,
+caconac,Cis-Aconitic acid
+caconac_e,
+citac,Citric acid
+citac_e,
+fumac,Fumaric acid
+fumac_e,
+malac,Malic acid
+malac_e,
+quinac,Quinic acid
+quinac_e,
+sucac,Succinic acid
+sucac_e,
+tarac,Tartaric acid
+tarac_e,
+dhbenzac34,"3,4-Dihydroxy Benzoic acid"
+dhbenzac34_e,
+hbenzal3,3-Hydroxy Benzaldehyde
+hbenzal3_e,
+pcathac,Protocatechuic acid
+pcathac_e,
+vanlac,Vanillic acid
+vanlac_e,
+gallac,Gallic acid
+gallac_e,
+cinmac,Cinnamic acid
+cinmac_e,
+coumaco,o-Coumaric acid
+coumaco_e,
+coumacp,p-Coumaric acid
+coumacp_e,
+caffac,Caffeic acid
+caffac_e,
+chlrac,Chlorogenic acid
+chlrac_e,
+ferac,Ferulic acid
+ferac_e,
+apigen,Apigenin
+apigen_e,
+apigen6cgls,Apigenin-6-C-gluoside
+apigen6cgls_e,
+apigen7onshps,Apigenin-7-O-neohesperidoside
+apigen7onshps_e,
+luteol,Luteolin
+luteol_e,
+kaemf,Kaempferol
+kaemf_e,
+querce,Quercetin
+querce_e,
+querce3bdgls,Quercetin-3-β-D-glucoside
+querce3bdgls_e,
+querce3ortns,Quercetin-3-O-rutinoside
+querce3ortns_e,
+querce3bgls,Quercetin-3-β-galactoside
+querce3bgls_e,
+isormt,Isorhamnetin
+isormt_e,
+myrct,Myricetin
+myrct_e,
+rsvrtol,Resvertrol
+rsvrtol_e,
+hespt,Hesperetin
+hespt_e,
+narng,Naringenin
+narng_e,
+hespd,Hesperdin
+hespd_e,
+daidzn,Daidzein
+daidzn_e,
+gnstein,Genistein
+gnstein_e,
+epicatec,(-)-Epicatechin
+epicatec_e,
+epicategc,(-)-Epigallo catechin
+epicategc_e,
+epicatgc3gal,(-)-Epigallo catechin 3-gallate
+epicatgc3gal_e,
+catec,(+)-Catechin
+catec_e,
+galcatecgal,(-)-Gallocatechin gallate
+galcatecgal_e,
+galcatec,(-)-Gallocatechin
+galcatec_e,
+syrgac,Syringic acid
+syrgac_e,
+sinpac,Sinapinic acid
+sinpac_e,
+ellgac,Ellagic acid
+ellgac_e,
+rafs,Raffinose
+rafs_e,
+stas,Stachyose
+stas_e,
+vers,Verbascose
+vers_e,
+ajgs,Ajugose
+ajgs_e,
+camt,Campesterol
+camt_e,
+stgstr,Stigmasterol
+stgstr_e,
+stostrb,β-Sitosterol
+stostrb_e,
+carot,Carotenes
+carot_e,
+xantp,Xanthophylls
+xantp_e,
+cartbeq,β-Carotene equivalents
+cartbeq_e,
+gi_values,

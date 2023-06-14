@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search Data</title>
+  </head>
+  <body>
+    <h1>Search Data</h1>
+    <form method="POST" action="/search">
+      <input type="text" name="query" placeholder="Search...">
+      <input type="submit" value="Search">
+    </form>
+    {{ data | safe }}
+  </body>
+</html>
