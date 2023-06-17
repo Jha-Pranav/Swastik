@@ -1,0 +1,4407 @@
+
+{
+  "schemaVersion": 1,
+  "Framework": "pytorch-lightning",
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "user_annotation", "name": "ProfilerStep#20", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376352, "dur": 9164,
+    "args": {
+      "External id": 8193,"Ev Idx": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]EarlyStopping{'monitor': 'val_loss', 'mode': 'min'}.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376443, "dur": 138,
+    "args": {
+      "External id": 8194,"Ev Idx": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]TQDMProgressBar.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376591, "dur": 309,
+    "args": {
+      "External id": 8195,"Ev Idx": 2
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelSummary.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376910, "dur": 5,
+    "args": {
+      "External id": 8196,"Ev Idx": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376923, "dur": 5,
+    "args": {
+      "External id": 8197,"Ev Idx": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309376940, "dur": 3,
+    "args": {
+      "External id": 8198,"Ev Idx": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][_EvaluationLoop].test_next", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377006, "dur": 197,
+    "args": {
+      "External id": 8199,"Ev Idx": 6
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "enumerate(DataLoader)#_MultiProcessingDataLoaderIter.__next__", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377014, "dur": 181,
+    "args": {
+      "External id": 8200,"Ev Idx": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377115, "dur": 1,
+    "args": {
+      "External id": 8201,"Ev Idx": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377118, "dur": 0,
+    "args": {
+      "External id": 8202,"Ev Idx": 9
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lift_fresh", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377119, "dur": 0,
+    "args": {
+      "External id": 8203,"Ev Idx": 10
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377120, "dur": 0,
+    "args": {
+      "External id": 8204,"Ev Idx": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377125, "dur": 1,
+    "args": {
+      "External id": 8205,"Ev Idx": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377158, "dur": 0,
+    "args": {
+      "External id": 8206,"Ev Idx": 13
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377159, "dur": 0,
+    "args": {
+      "External id": 8207,"Ev Idx": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lift_fresh", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377160, "dur": 0,
+    "args": {
+      "External id": 8208,"Ev Idx": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377160, "dur": 0,
+    "args": {
+      "External id": 8209,"Ev Idx": 16
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377161, "dur": 1,
+    "args": {
+      "External id": 8210,"Ev Idx": 17
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_before_batch_transfer", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377272, "dur": 6,
+    "args": {
+      "External id": 8211,"Ev Idx": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Strategy]SingleDeviceStrategy.batch_to_device", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377288, "dur": 976,
+    "args": {
+      "External id": 8212,"Ev Idx": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.transfer_batch_to_device", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377303, "dur": 905,
+    "args": {
+      "External id": 8213,"Ev Idx": 20
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377316, "dur": 531,
+    "args": {
+      "External id": 8214,"Ev Idx": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377316, "dur": 531,
+    "args": {
+      "External id": 8215,"Ev Idx": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377317, "dur": 2,
+    "args": {
+      "External id": 8216,"Ev Idx": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377320, "dur": 526,
+    "args": {
+      "External id": 8217,"Ev Idx": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand_as", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377322, "dur": 3,
+    "args": {
+      "External id": 8218,"Ev Idx": 25
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377323, "dur": 2,
+    "args": {
+      "External id": 8219,"Ev Idx": 26
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377324, "dur": 1,
+    "args": {
+      "External id": 8220,"Ev Idx": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377943, "dur": 250,
+    "args": {
+      "External id": 8221,"Ev Idx": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377943, "dur": 249,
+    "args": {
+      "External id": 8222,"Ev Idx": 29
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377944, "dur": 2,
+    "args": {
+      "External id": 8223,"Ev Idx": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377947, "dur": 245,
+    "args": {
+      "External id": 8224,"Ev Idx": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand_as", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377948, "dur": 1,
+    "args": {
+      "External id": 8225,"Ev Idx": 32
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377949, "dur": 0,
+    "args": {
+      "External id": 8226,"Ev Idx": 33
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309377949, "dur": 0,
+    "args": {
+      "External id": 8227,"Ev Idx": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_after_batch_transfer", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378249, "dur": 9,
+    "args": {
+      "External id": 8228,"Ev Idx": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]EarlyStopping{'monitor': 'val_loss', 'mode': 'min'}.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378305, "dur": 6,
+    "args": {
+      "External id": 8229,"Ev Idx": 36
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]TQDMProgressBar.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378317, "dur": 6,
+    "args": {
+      "External id": 8230,"Ev Idx": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelSummary.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378327, "dur": 4,
+    "args": {
+      "External id": 8231,"Ev Idx": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378338, "dur": 4,
+    "args": {
+      "External id": 8232,"Ev Idx": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378349, "dur": 3,
+    "args": {
+      "External id": 8233,"Ev Idx": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Strategy]SingleDeviceStrategy.test_step", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378362, "dur": 7136,
+    "args": {
+      "External id": 8234,"Ev Idx": 41
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378606, "dur": 5,
+    "args": {
+      "External id": 8235,"Ev Idx": 42
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378610, "dur": 1,
+    "args": {
+      "External id": 8236,"Ev Idx": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torch.nn.modules.linear.Linear: fc1", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378626, "dur": 184,
+    "args": {
+      "External id": 8237,"Ev Idx": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378635, "dur": 167,
+    "args": {
+      "External id": 8238,"Ev Idx": 45
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::relu", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378815, "dur": 53,
+    "args": {
+      "External id": 8239,"Ev Idx": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378816, "dur": 2,
+    "args": {
+      "External id": 8240,"Ev Idx": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378816, "dur": 2,
+    "args": {
+      "External id": 8241,"Ev Idx": 48
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torch.nn.modules.linear.Linear: fc2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378879, "dur": 75,
+    "args": {
+      "External id": 8242,"Ev Idx": 49
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378886, "dur": 63,
+    "args": {
+      "External id": 8243,"Ev Idx": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cross_entropy_loss", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378962, "dur": 234,
+    "args": {
+      "External id": 8244,"Ev Idx": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::log_softmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378963, "dur": 70,
+    "args": {
+      "External id": 8245,"Ev Idx": 52
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378964, "dur": 0,
+    "args": {
+      "External id": 8246,"Ev Idx": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_log_softmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309378965, "dur": 67,
+    "args": {
+      "External id": 8247,"Ev Idx": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss_nd", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379034, "dur": 162,
+    "args": {
+      "External id": 8248,"Ev Idx": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379036, "dur": 160,
+    "args": {
+      "External id": 8249,"Ev Idx": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss_forward", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379037, "dur": 158,
+    "args": {
+      "External id": 8250,"Ev Idx": 57
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379041, "dur": 1,
+    "args": {
+      "External id": 8251,"Ev Idx": 58
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379041, "dur": 1,
+    "args": {
+      "External id": 8252,"Ev Idx": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379043, "dur": 0,
+    "args": {
+      "External id": 8253,"Ev Idx": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379044, "dur": 2,
+    "args": {
+      "External id": 8254,"Ev Idx": 61
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379045, "dur": 1,
+    "args": {
+      "External id": 8255,"Ev Idx": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379046, "dur": 34,
+    "args": {
+      "External id": 8256,"Ev Idx": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379081, "dur": 0,
+    "args": {
+      "External id": 8257,"Ev Idx": 64
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torchmetrics.classification.accuracy.MulticlassAccuracy: accuracy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379209, "dur": 3054,
+    "args": {
+      "External id": 8258,"Ev Idx": 65
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379229, "dur": 2,
+    "args": {
+      "External id": 8259,"Ev Idx": 66
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379232, "dur": 13,
+    "args": {
+      "External id": 8260,"Ev Idx": 67
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379233, "dur": 1,
+    "args": {
+      "External id": 8261,"Ev Idx": 68
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379234, "dur": 11,
+    "args": {
+      "External id": 8262,"Ev Idx": 69
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379247, "dur": 0,
+    "args": {
+      "External id": 8263,"Ev Idx": 70
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379250, "dur": 0,
+    "args": {
+      "External id": 8264,"Ev Idx": 71
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379251, "dur": 2,
+    "args": {
+      "External id": 8265,"Ev Idx": 72
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379251, "dur": 0,
+    "args": {
+      "External id": 8266,"Ev Idx": 73
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379251, "dur": 2,
+    "args": {
+      "External id": 8267,"Ev Idx": 74
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379254, "dur": 0,
+    "args": {
+      "External id": 8268,"Ev Idx": 75
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379256, "dur": 0,
+    "args": {
+      "External id": 8269,"Ev Idx": 76
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379256, "dur": 2,
+    "args": {
+      "External id": 8270,"Ev Idx": 77
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379257, "dur": 0,
+    "args": {
+      "External id": 8271,"Ev Idx": 78
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379257, "dur": 1,
+    "args": {
+      "External id": 8272,"Ev Idx": 79
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379259, "dur": 0,
+    "args": {
+      "External id": 8273,"Ev Idx": 80
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379261, "dur": 0,
+    "args": {
+      "External id": 8274,"Ev Idx": 81
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379262, "dur": 2,
+    "args": {
+      "External id": 8275,"Ev Idx": 82
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379262, "dur": 0,
+    "args": {
+      "External id": 8276,"Ev Idx": 83
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379262, "dur": 1,
+    "args": {
+      "External id": 8277,"Ev Idx": 84
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379264, "dur": 0,
+    "args": {
+      "External id": 8278,"Ev Idx": 85
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_unique2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379290, "dur": 1180,
+    "args": {
+      "External id": 8279,"Ev Idx": 86
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379469, "dur": 996,
+    "args": {
+      "External id": 8280,"Ev Idx": 87
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379469, "dur": 995,
+    "args": {
+      "External id": 8281,"Ev Idx": 88
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379470, "dur": 6,
+    "args": {
+      "External id": 8282,"Ev Idx": 89
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309379470, "dur": 6,
+    "args": {
+      "External id": 8283,"Ev Idx": 90
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::slice", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380466, "dur": 3,
+    "args": {
+      "External id": 8284,"Ev Idx": 91
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380468, "dur": 1,
+    "args": {
+      "External id": 8285,"Ev Idx": 92
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::argmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380482, "dur": 94,
+    "args": {
+      "External id": 8286,"Ev Idx": 93
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380581, "dur": 2,
+    "args": {
+      "External id": 8287,"Ev Idx": 94
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380583, "dur": 0,
+    "args": {
+      "External id": 8288,"Ev Idx": 95
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380585, "dur": 0,
+    "args": {
+      "External id": 8289,"Ev Idx": 96
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380585, "dur": 0,
+    "args": {
+      "External id": 8290,"Ev Idx": 97
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380588, "dur": 1,
+    "args": {
+      "External id": 8291,"Ev Idx": 98
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380588, "dur": 1,
+    "args": {
+      "External id": 8292,"Ev Idx": 99
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380589, "dur": 0,
+    "args": {
+      "External id": 8293,"Ev Idx": 100
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380589, "dur": 0,
+    "args": {
+      "External id": 8294,"Ev Idx": 101
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380591, "dur": 50,
+    "args": {
+      "External id": 8295,"Ev Idx": 102
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380644, "dur": 44,
+    "args": {
+      "External id": 8296,"Ev Idx": 103
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380645, "dur": 43,
+    "args": {
+      "External id": 8297,"Ev Idx": 104
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380692, "dur": 41,
+    "args": {
+      "External id": 8298,"Ev Idx": 105
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380734, "dur": 30,
+    "args": {
+      "External id": 8299,"Ev Idx": 106
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380735, "dur": 29,
+    "args": {
+      "External id": 8300,"Ev Idx": 107
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380766, "dur": 33,
+    "args": {
+      "External id": 8301,"Ev Idx": 108
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380800, "dur": 28,
+    "args": {
+      "External id": 8302,"Ev Idx": 109
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380800, "dur": 28,
+    "args": {
+      "External id": 8303,"Ev Idx": 110
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380832, "dur": 36,
+    "args": {
+      "External id": 8304,"Ev Idx": 111
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380869, "dur": 26,
+    "args": {
+      "External id": 8305,"Ev Idx": 112
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::rsub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380901, "dur": 40,
+    "args": {
+      "External id": 8306,"Ev Idx": 113
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380902, "dur": 39,
+    "args": {
+      "External id": 8307,"Ev Idx": 114
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380906, "dur": 0,
+    "args": {
+      "External id": 8308,"Ev Idx": 115
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380906, "dur": 0,
+    "args": {
+      "External id": 8309,"Ev Idx": 116
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380947, "dur": 38,
+    "args": {
+      "External id": 8310,"Ev Idx": 117
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309380991, "dur": 29,
+    "args": {
+      "External id": 8311,"Ev Idx": 118
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381024, "dur": 28,
+    "args": {
+      "External id": 8312,"Ev Idx": 119
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381056, "dur": 28,
+    "args": {
+      "External id": 8313,"Ev Idx": 120
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381109, "dur": 57,
+    "args": {
+      "External id": 8314,"Ev Idx": 121
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381171, "dur": 38,
+    "args": {
+      "External id": 8315,"Ev Idx": 122
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381212, "dur": 36,
+    "args": {
+      "External id": 8316,"Ev Idx": 123
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381251, "dur": 35,
+    "args": {
+      "External id": 8317,"Ev Idx": 124
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381289, "dur": 38,
+    "args": {
+      "External id": 8318,"Ev Idx": 125
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381328, "dur": 29,
+    "args": {
+      "External id": 8319,"Ev Idx": 126
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381358, "dur": 27,
+    "args": {
+      "External id": 8320,"Ev Idx": 127
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381388, "dur": 38,
+    "args": {
+      "External id": 8321,"Ev Idx": 128
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381393, "dur": 1,
+    "args": {
+      "External id": 8322,"Ev Idx": 129
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381393, "dur": 1,
+    "args": {
+      "External id": 8323,"Ev Idx": 130
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::scalar_tensor", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381428, "dur": 30,
+    "args": {
+      "External id": 8324,"Ev Idx": 131
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381429, "dur": 1,
+    "args": {
+      "External id": 8325,"Ev Idx": 132
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381431, "dur": 27,
+    "args": {
+      "External id": 8326,"Ev Idx": 133
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::unsqueeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381461, "dur": 1,
+    "args": {
+      "External id": 8327,"Ev Idx": 134
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381462, "dur": 0,
+    "args": {
+      "External id": 8328,"Ev Idx": 135
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381463, "dur": 430,
+    "args": {
+      "External id": 8329,"Ev Idx": 136
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381463, "dur": 430,
+    "args": {
+      "External id": 8330,"Ev Idx": 137
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381463, "dur": 1,
+    "args": {
+      "External id": 8331,"Ev Idx": 138
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381464, "dur": 0,
+    "args": {
+      "External id": 8332,"Ev Idx": 139
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381895, "dur": 1,
+    "args": {
+      "External id": 8333,"Ev Idx": 140
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381895, "dur": 1,
+    "args": {
+      "External id": 8334,"Ev Idx": 141
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::index_put_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381898, "dur": 8,
+    "args": {
+      "External id": 8335,"Ev Idx": 142
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_index_put_impl_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381899, "dur": 7,
+    "args": {
+      "External id": 8336,"Ev Idx": 143
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381901, "dur": 1,
+    "args": {
+      "External id": 8337,"Ev Idx": 144
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381902, "dur": 2,
+    "args": {
+      "External id": 8338,"Ev Idx": 145
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381903, "dur": 1,
+    "args": {
+      "External id": 8339,"Ev Idx": 146
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381912, "dur": 73,
+    "args": {
+      "External id": 8340,"Ev Idx": 147
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381913, "dur": 72,
+    "args": {
+      "External id": 8341,"Ev Idx": 148
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381913, "dur": 1,
+    "args": {
+      "External id": 8342,"Ev Idx": 149
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381914, "dur": 70,
+    "args": {
+      "External id": 8343,"Ev Idx": 150
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381986, "dur": 32,
+    "args": {
+      "External id": 8344,"Ev Idx": 151
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381987, "dur": 31,
+    "args": {
+      "External id": 8345,"Ev Idx": 152
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381987, "dur": 1,
+    "args": {
+      "External id": 8346,"Ev Idx": 153
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309381988, "dur": 30,
+    "args": {
+      "External id": 8347,"Ev Idx": 154
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::div", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382021, "dur": 41,
+    "args": {
+      "External id": 8348,"Ev Idx": 155
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382069, "dur": 2,
+    "args": {
+      "External id": 8349,"Ev Idx": 156
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382070, "dur": 1,
+    "args": {
+      "External id": 8350,"Ev Idx": 157
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382088, "dur": 44,
+    "args": {
+      "External id": 8351,"Ev Idx": 158
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382137, "dur": 33,
+    "args": {
+      "External id": 8352,"Ev Idx": 159
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382174, "dur": 31,
+    "args": {
+      "External id": 8353,"Ev Idx": 160
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382208, "dur": 30,
+    "args": {
+      "External id": 8354,"Ev Idx": 161
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torchmetrics.classification.f_beta.MulticlassF1Score: f1_score", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382280, "dur": 2726,
+    "args": {
+      "External id": 8355,"Ev Idx": 162
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382297, "dur": 1,
+    "args": {
+      "External id": 8356,"Ev Idx": 163
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382299, "dur": 8,
+    "args": {
+      "External id": 8357,"Ev Idx": 164
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382299, "dur": 1,
+    "args": {
+      "External id": 8358,"Ev Idx": 165
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382300, "dur": 7,
+    "args": {
+      "External id": 8359,"Ev Idx": 166
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382309, "dur": 0,
+    "args": {
+      "External id": 8360,"Ev Idx": 167
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382311, "dur": 0,
+    "args": {
+      "External id": 8361,"Ev Idx": 168
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382312, "dur": 2,
+    "args": {
+      "External id": 8362,"Ev Idx": 169
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382312, "dur": 0,
+    "args": {
+      "External id": 8363,"Ev Idx": 170
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382313, "dur": 1,
+    "args": {
+      "External id": 8364,"Ev Idx": 171
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382315, "dur": 0,
+    "args": {
+      "External id": 8365,"Ev Idx": 172
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382317, "dur": 0,
+    "args": {
+      "External id": 8366,"Ev Idx": 173
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382318, "dur": 1,
+    "args": {
+      "External id": 8367,"Ev Idx": 174
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382318, "dur": 0,
+    "args": {
+      "External id": 8368,"Ev Idx": 175
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382318, "dur": 1,
+    "args": {
+      "External id": 8369,"Ev Idx": 176
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382320, "dur": 0,
+    "args": {
+      "External id": 8370,"Ev Idx": 177
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382322, "dur": 0,
+    "args": {
+      "External id": 8371,"Ev Idx": 178
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382323, "dur": 1,
+    "args": {
+      "External id": 8372,"Ev Idx": 179
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382323, "dur": 0,
+    "args": {
+      "External id": 8373,"Ev Idx": 180
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382323, "dur": 1,
+    "args": {
+      "External id": 8374,"Ev Idx": 181
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382325, "dur": 0,
+    "args": {
+      "External id": 8375,"Ev Idx": 182
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_unique2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382342, "dur": 953,
+    "args": {
+      "External id": 8376,"Ev Idx": 183
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382501, "dur": 791,
+    "args": {
+      "External id": 8377,"Ev Idx": 184
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382501, "dur": 791,
+    "args": {
+      "External id": 8378,"Ev Idx": 185
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382502, "dur": 3,
+    "args": {
+      "External id": 8379,"Ev Idx": 186
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309382502, "dur": 3,
+    "args": {
+      "External id": 8380,"Ev Idx": 187
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::slice", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383293, "dur": 2,
+    "args": {
+      "External id": 8381,"Ev Idx": 188
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383294, "dur": 1,
+    "args": {
+      "External id": 8382,"Ev Idx": 189
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::argmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383304, "dur": 73,
+    "args": {
+      "External id": 8383,"Ev Idx": 190
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383380, "dur": 2,
+    "args": {
+      "External id": 8384,"Ev Idx": 191
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383382, "dur": 0,
+    "args": {
+      "External id": 8385,"Ev Idx": 192
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383383, "dur": 1,
+    "args": {
+      "External id": 8386,"Ev Idx": 193
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383383, "dur": 1,
+    "args": {
+      "External id": 8387,"Ev Idx": 194
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383386, "dur": 0,
+    "args": {
+      "External id": 8388,"Ev Idx": 195
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383386, "dur": 0,
+    "args": {
+      "External id": 8389,"Ev Idx": 196
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383387, "dur": 0,
+    "args": {
+      "External id": 8390,"Ev Idx": 197
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383387, "dur": 0,
+    "args": {
+      "External id": 8391,"Ev Idx": 198
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383388, "dur": 39,
+    "args": {
+      "External id": 8392,"Ev Idx": 199
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383428, "dur": 34,
+    "args": {
+      "External id": 8393,"Ev Idx": 200
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383429, "dur": 33,
+    "args": {
+      "External id": 8394,"Ev Idx": 201
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383464, "dur": 32,
+    "args": {
+      "External id": 8395,"Ev Idx": 202
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383497, "dur": 28,
+    "args": {
+      "External id": 8396,"Ev Idx": 203
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383497, "dur": 28,
+    "args": {
+      "External id": 8397,"Ev Idx": 204
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383527, "dur": 30,
+    "args": {
+      "External id": 8398,"Ev Idx": 205
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383558, "dur": 28,
+    "args": {
+      "External id": 8399,"Ev Idx": 206
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383558, "dur": 28,
+    "args": {
+      "External id": 8400,"Ev Idx": 207
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383588, "dur": 27,
+    "args": {
+      "External id": 8401,"Ev Idx": 208
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383616, "dur": 24,
+    "args": {
+      "External id": 8402,"Ev Idx": 209
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::rsub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383644, "dur": 37,
+    "args": {
+      "External id": 8403,"Ev Idx": 210
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383645, "dur": 35,
+    "args": {
+      "External id": 8404,"Ev Idx": 211
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383647, "dur": 1,
+    "args": {
+      "External id": 8405,"Ev Idx": 212
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383647, "dur": 0,
+    "args": {
+      "External id": 8406,"Ev Idx": 213
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383684, "dur": 30,
+    "args": {
+      "External id": 8407,"Ev Idx": 214
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383718, "dur": 27,
+    "args": {
+      "External id": 8408,"Ev Idx": 215
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383749, "dur": 27,
+    "args": {
+      "External id": 8409,"Ev Idx": 216
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383779, "dur": 27,
+    "args": {
+      "External id": 8410,"Ev Idx": 217
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383821, "dur": 48,
+    "args": {
+      "External id": 8411,"Ev Idx": 218
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383873, "dur": 41,
+    "args": {
+      "External id": 8412,"Ev Idx": 219
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383917, "dur": 38,
+    "args": {
+      "External id": 8413,"Ev Idx": 220
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383957, "dur": 38,
+    "args": {
+      "External id": 8414,"Ev Idx": 221
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309383999, "dur": 31,
+    "args": {
+      "External id": 8415,"Ev Idx": 222
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384032, "dur": 28,
+    "args": {
+      "External id": 8416,"Ev Idx": 223
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384062, "dur": 28,
+    "args": {
+      "External id": 8417,"Ev Idx": 224
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384095, "dur": 38,
+    "args": {
+      "External id": 8418,"Ev Idx": 225
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384099, "dur": 1,
+    "args": {
+      "External id": 8419,"Ev Idx": 226
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384100, "dur": 0,
+    "args": {
+      "External id": 8420,"Ev Idx": 227
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384136, "dur": 28,
+    "args": {
+      "External id": 8421,"Ev Idx": 228
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384139, "dur": 0,
+    "args": {
+      "External id": 8422,"Ev Idx": 229
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384139, "dur": 0,
+    "args": {
+      "External id": 8423,"Ev Idx": 230
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384166, "dur": 26,
+    "args": {
+      "External id": 8424,"Ev Idx": 231
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384169, "dur": 0,
+    "args": {
+      "External id": 8425,"Ev Idx": 232
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384169, "dur": 0,
+    "args": {
+      "External id": 8426,"Ev Idx": 233
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384194, "dur": 36,
+    "args": {
+      "External id": 8427,"Ev Idx": 234
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384232, "dur": 32,
+    "args": {
+      "External id": 8428,"Ev Idx": 235
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384266, "dur": 37,
+    "args": {
+      "External id": 8429,"Ev Idx": 236
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384271, "dur": 0,
+    "args": {
+      "External id": 8430,"Ev Idx": 237
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384271, "dur": 0,
+    "args": {
+      "External id": 8431,"Ev Idx": 238
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::scalar_tensor", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384308, "dur": 28,
+    "args": {
+      "External id": 8432,"Ev Idx": 239
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384308, "dur": 1,
+    "args": {
+      "External id": 8433,"Ev Idx": 240
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384309, "dur": 27,
+    "args": {
+      "External id": 8434,"Ev Idx": 241
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::unsqueeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384337, "dur": 1,
+    "args": {
+      "External id": 8435,"Ev Idx": 242
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384337, "dur": 1,
+    "args": {
+      "External id": 8436,"Ev Idx": 243
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384338, "dur": 440,
+    "args": {
+      "External id": 8437,"Ev Idx": 244
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384339, "dur": 439,
+    "args": {
+      "External id": 8438,"Ev Idx": 245
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384339, "dur": 1,
+    "args": {
+      "External id": 8439,"Ev Idx": 246
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384339, "dur": 1,
+    "args": {
+      "External id": 8440,"Ev Idx": 247
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384779, "dur": 1,
+    "args": {
+      "External id": 8441,"Ev Idx": 248
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384780, "dur": 0,
+    "args": {
+      "External id": 8442,"Ev Idx": 249
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::index_put_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384781, "dur": 4,
+    "args": {
+      "External id": 8443,"Ev Idx": 250
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_index_put_impl_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384781, "dur": 4,
+    "args": {
+      "External id": 8444,"Ev Idx": 251
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384782, "dur": 0,
+    "args": {
+      "External id": 8445,"Ev Idx": 252
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384783, "dur": 1,
+    "args": {
+      "External id": 8446,"Ev Idx": 253
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384783, "dur": 1,
+    "args": {
+      "External id": 8447,"Ev Idx": 254
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::div", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384788, "dur": 45,
+    "args": {
+      "External id": 8448,"Ev Idx": 255
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384839, "dur": 1,
+    "args": {
+      "External id": 8449,"Ev Idx": 256
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384839, "dur": 0,
+    "args": {
+      "External id": 8450,"Ev Idx": 257
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384850, "dur": 34,
+    "args": {
+      "External id": 8451,"Ev Idx": 258
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384888, "dur": 32,
+    "args": {
+      "External id": 8452,"Ev Idx": 259
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384924, "dur": 30,
+    "args": {
+      "External id": 8453,"Ev Idx": 260
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309384957, "dur": 31,
+    "args": {
+      "External id": 8454,"Ev Idx": 261
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385046, "dur": 7,
+    "args": {
+      "External id": 8455,"Ev Idx": 262
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385046, "dur": 1,
+    "args": {
+      "External id": 8456,"Ev Idx": 263
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385048, "dur": 5,
+    "args": {
+      "External id": 8457,"Ev Idx": 264
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385054, "dur": 0,
+    "args": {
+      "External id": 8458,"Ev Idx": 265
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385057, "dur": 0,
+    "args": {
+      "External id": 8459,"Ev Idx": 266
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385059, "dur": 1,
+    "args": {
+      "External id": 8460,"Ev Idx": 267
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385059, "dur": 1,
+    "args": {
+      "External id": 8461,"Ev Idx": 268
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385067, "dur": 1,
+    "args": {
+      "External id": 8462,"Ev Idx": 269
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385096, "dur": 0,
+    "args": {
+      "External id": 8463,"Ev Idx": 270
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385103, "dur": 47,
+    "args": {
+      "External id": 8464,"Ev Idx": 271
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385107, "dur": 0,
+    "args": {
+      "External id": 8465,"Ev Idx": 272
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385107, "dur": 0,
+    "args": {
+      "External id": 8466,"Ev Idx": 273
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385152, "dur": 28,
+    "args": {
+      "External id": 8467,"Ev Idx": 274
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385184, "dur": 28,
+    "args": {
+      "External id": 8468,"Ev Idx": 275
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385187, "dur": 0,
+    "args": {
+      "External id": 8469,"Ev Idx": 276
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385187, "dur": 0,
+    "args": {
+      "External id": 8470,"Ev Idx": 277
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385230, "dur": 6,
+    "args": {
+      "External id": 8471,"Ev Idx": 278
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385230, "dur": 1,
+    "args": {
+      "External id": 8472,"Ev Idx": 279
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385231, "dur": 5,
+    "args": {
+      "External id": 8473,"Ev Idx": 280
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385237, "dur": 0,
+    "args": {
+      "External id": 8474,"Ev Idx": 281
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385239, "dur": 0,
+    "args": {
+      "External id": 8475,"Ev Idx": 282
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385239, "dur": 1,
+    "args": {
+      "External id": 8476,"Ev Idx": 283
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385240, "dur": 0,
+    "args": {
+      "External id": 8477,"Ev Idx": 284
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385244, "dur": 0,
+    "args": {
+      "External id": 8478,"Ev Idx": 285
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385253, "dur": 0,
+    "args": {
+      "External id": 8479,"Ev Idx": 286
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385257, "dur": 32,
+    "args": {
+      "External id": 8480,"Ev Idx": 287
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385261, "dur": 0,
+    "args": {
+      "External id": 8481,"Ev Idx": 288
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385261, "dur": 0,
+    "args": {
+      "External id": 8482,"Ev Idx": 289
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385291, "dur": 27,
+    "args": {
+      "External id": 8483,"Ev Idx": 290
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385321, "dur": 27,
+    "args": {
+      "External id": 8484,"Ev Idx": 291
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385324, "dur": 0,
+    "args": {
+      "External id": 8485,"Ev Idx": 292
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385324, "dur": 0,
+    "args": {
+      "External id": 8486,"Ev Idx": 293
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385363, "dur": 4,
+    "args": {
+      "External id": 8487,"Ev Idx": 294
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385363, "dur": 0,
+    "args": {
+      "External id": 8488,"Ev Idx": 295
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385364, "dur": 3,
+    "args": {
+      "External id": 8489,"Ev Idx": 296
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385368, "dur": 0,
+    "args": {
+      "External id": 8490,"Ev Idx": 297
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385370, "dur": 0,
+    "args": {
+      "External id": 8491,"Ev Idx": 298
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385370, "dur": 1,
+    "args": {
+      "External id": 8492,"Ev Idx": 299
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385371, "dur": 0,
+    "args": {
+      "External id": 8493,"Ev Idx": 300
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385374, "dur": 0,
+    "args": {
+      "External id": 8494,"Ev Idx": 301
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385382, "dur": 0,
+    "args": {
+      "External id": 8495,"Ev Idx": 302
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385386, "dur": 35,
+    "args": {
+      "External id": 8496,"Ev Idx": 303
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385389, "dur": 1,
+    "args": {
+      "External id": 8497,"Ev Idx": 304
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385390, "dur": 0,
+    "args": {
+      "External id": 8498,"Ev Idx": 305
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385423, "dur": 27,
+    "args": {
+      "External id": 8499,"Ev Idx": 306
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385453, "dur": 29,
+    "args": {
+      "External id": 8500,"Ev Idx": 307
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385456, "dur": 1,
+    "args": {
+      "External id": 8501,"Ev Idx": 308
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385457, "dur": 0,
+    "args": {
+      "External id": 8502,"Ev Idx": 309
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "ProfilerStep#21", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385539, "dur": 10061,
+    "args": {
+      "External id": 8503,"Ev Idx": 310
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]EarlyStopping{'monitor': 'val_loss', 'mode': 'min'}.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385568, "dur": 5,
+    "args": {
+      "External id": 8504,"Ev Idx": 311
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]TQDMProgressBar.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385580, "dur": 334,
+    "args": {
+      "External id": 8505,"Ev Idx": 312
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelSummary.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309385923, "dur": 4,
+    "args": {
+      "External id": 8506,"Ev Idx": 313
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386009, "dur": 6,
+    "args": {
+      "External id": 8507,"Ev Idx": 314
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_test_batch_end", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386026, "dur": 3,
+    "args": {
+      "External id": 8508,"Ev Idx": 315
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][_EvaluationLoop].test_next", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386097, "dur": 217,
+    "args": {
+      "External id": 8509,"Ev Idx": 316
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "enumerate(DataLoader)#_MultiProcessingDataLoaderIter.__next__", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386104, "dur": 202,
+    "args": {
+      "External id": 8510,"Ev Idx": 317
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386216, "dur": 1,
+    "args": {
+      "External id": 8511,"Ev Idx": 318
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386219, "dur": 0,
+    "args": {
+      "External id": 8512,"Ev Idx": 319
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lift_fresh", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386220, "dur": 0,
+    "args": {
+      "External id": 8513,"Ev Idx": 320
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386221, "dur": 0,
+    "args": {
+      "External id": 8514,"Ev Idx": 321
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386226, "dur": 0,
+    "args": {
+      "External id": 8515,"Ev Idx": 322
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386267, "dur": 1,
+    "args": {
+      "External id": 8516,"Ev Idx": 323
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386269, "dur": 0,
+    "args": {
+      "External id": 8517,"Ev Idx": 324
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lift_fresh", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386270, "dur": 0,
+    "args": {
+      "External id": 8518,"Ev Idx": 325
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386270, "dur": 0,
+    "args": {
+      "External id": 8519,"Ev Idx": 326
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386271, "dur": 1,
+    "args": {
+      "External id": 8520,"Ev Idx": 327
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_before_batch_transfer", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386738, "dur": 8,
+    "args": {
+      "External id": 8521,"Ev Idx": 328
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Strategy]SingleDeviceStrategy.batch_to_device", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386759, "dur": 1303,
+    "args": {
+      "External id": 8522,"Ev Idx": 329
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.transfer_batch_to_device", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386776, "dur": 1221,
+    "args": {
+      "External id": 8523,"Ev Idx": 330
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386792, "dur": 716,
+    "args": {
+      "External id": 8524,"Ev Idx": 331
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386792, "dur": 716,
+    "args": {
+      "External id": 8525,"Ev Idx": 332
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386792, "dur": 3,
+    "args": {
+      "External id": 8526,"Ev Idx": 333
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386795, "dur": 712,
+    "args": {
+      "External id": 8527,"Ev Idx": 334
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand_as", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386797, "dur": 3,
+    "args": {
+      "External id": 8528,"Ev Idx": 335
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386798, "dur": 2,
+    "args": {
+      "External id": 8529,"Ev Idx": 336
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309386799, "dur": 1,
+    "args": {
+      "External id": 8530,"Ev Idx": 337
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387524, "dur": 449,
+    "args": {
+      "External id": 8531,"Ev Idx": 338
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387536, "dur": 437,
+    "args": {
+      "External id": 8532,"Ev Idx": 339
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387545, "dur": 10,
+    "args": {
+      "External id": 8533,"Ev Idx": 340
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387557, "dur": 415,
+    "args": {
+      "External id": 8534,"Ev Idx": 341
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand_as", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387606, "dur": 3,
+    "args": {
+      "External id": 8535,"Ev Idx": 342
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387607, "dur": 2,
+    "args": {
+      "External id": 8536,"Ev Idx": 343
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309387608, "dur": 1,
+    "args": {
+      "External id": 8537,"Ev Idx": 344
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_after_batch_transfer", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388045, "dur": 10,
+    "args": {
+      "External id": 8538,"Ev Idx": 345
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]EarlyStopping{'monitor': 'val_loss', 'mode': 'min'}.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388114, "dur": 6,
+    "args": {
+      "External id": 8539,"Ev Idx": 346
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]TQDMProgressBar.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388126, "dur": 5,
+    "args": {
+      "External id": 8540,"Ev Idx": 347
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelSummary.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388136, "dur": 3,
+    "args": {
+      "External id": 8541,"Ev Idx": 348
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Callback]ModelCheckpoint{'monitor': None, 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388148, "dur": 3,
+    "args": {
+      "External id": 8542,"Ev Idx": 349
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][LightningModule]NN.on_test_batch_start", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388158, "dur": 3,
+    "args": {
+      "External id": 8543,"Ev Idx": 350
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][profile][Strategy]SingleDeviceStrategy.test_step", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388187, "dur": 7393,
+    "args": {
+      "External id": 8544,"Ev Idx": 351
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388479, "dur": 7,
+    "args": {
+      "External id": 8545,"Ev Idx": 352
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388484, "dur": 1,
+    "args": {
+      "External id": 8546,"Ev Idx": 353
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torch.nn.modules.linear.Linear: fc1", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388516, "dur": 253,
+    "args": {
+      "External id": 8547,"Ev Idx": 354
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388527, "dur": 231,
+    "args": {
+      "External id": 8548,"Ev Idx": 355
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::relu", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388775, "dur": 62,
+    "args": {
+      "External id": 8549,"Ev Idx": 356
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388777, "dur": 4,
+    "args": {
+      "External id": 8550,"Ev Idx": 357
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388778, "dur": 3,
+    "args": {
+      "External id": 8551,"Ev Idx": 358
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torch.nn.modules.linear.Linear: fc2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388850, "dur": 79,
+    "args": {
+      "External id": 8552,"Ev Idx": 359
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388857, "dur": 66,
+    "args": {
+      "External id": 8553,"Ev Idx": 360
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cross_entropy_loss", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388939, "dur": 278,
+    "args": {
+      "External id": 8554,"Ev Idx": 361
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::log_softmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388941, "dur": 85,
+    "args": {
+      "External id": 8555,"Ev Idx": 362
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388942, "dur": 1,
+    "args": {
+      "External id": 8556,"Ev Idx": 363
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_log_softmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309388944, "dur": 82,
+    "args": {
+      "External id": 8557,"Ev Idx": 364
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss_nd", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389027, "dur": 190,
+    "args": {
+      "External id": 8558,"Ev Idx": 365
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389030, "dur": 187,
+    "args": {
+      "External id": 8559,"Ev Idx": 366
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::nll_loss_forward", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389032, "dur": 184,
+    "args": {
+      "External id": 8560,"Ev Idx": 367
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389036, "dur": 1,
+    "args": {
+      "External id": 8561,"Ev Idx": 368
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389036, "dur": 1,
+    "args": {
+      "External id": 8562,"Ev Idx": 369
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389038, "dur": 1,
+    "args": {
+      "External id": 8563,"Ev Idx": 370
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389039, "dur": 4,
+    "args": {
+      "External id": 8564,"Ev Idx": 371
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389041, "dur": 1,
+    "args": {
+      "External id": 8565,"Ev Idx": 372
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389043, "dur": 40,
+    "args": {
+      "External id": 8566,"Ev Idx": 373
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::resize_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389083, "dur": 1,
+    "args": {
+      "External id": 8567,"Ev Idx": 374
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torchmetrics.classification.accuracy.MulticlassAccuracy: accuracy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389233, "dur": 3141,
+    "args": {
+      "External id": 8568,"Ev Idx": 375
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389260, "dur": 2,
+    "args": {
+      "External id": 8569,"Ev Idx": 376
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389264, "dur": 14,
+    "args": {
+      "External id": 8570,"Ev Idx": 377
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389264, "dur": 1,
+    "args": {
+      "External id": 8571,"Ev Idx": 378
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389266, "dur": 12,
+    "args": {
+      "External id": 8572,"Ev Idx": 379
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389281, "dur": 1,
+    "args": {
+      "External id": 8573,"Ev Idx": 380
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389285, "dur": 0,
+    "args": {
+      "External id": 8574,"Ev Idx": 381
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389286, "dur": 2,
+    "args": {
+      "External id": 8575,"Ev Idx": 382
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389286, "dur": 0,
+    "args": {
+      "External id": 8576,"Ev Idx": 383
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389286, "dur": 2,
+    "args": {
+      "External id": 8577,"Ev Idx": 384
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389289, "dur": 0,
+    "args": {
+      "External id": 8578,"Ev Idx": 385
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389291, "dur": 1,
+    "args": {
+      "External id": 8579,"Ev Idx": 386
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389292, "dur": 2,
+    "args": {
+      "External id": 8580,"Ev Idx": 387
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389292, "dur": 1,
+    "args": {
+      "External id": 8581,"Ev Idx": 388
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389293, "dur": 1,
+    "args": {
+      "External id": 8582,"Ev Idx": 389
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389295, "dur": 0,
+    "args": {
+      "External id": 8583,"Ev Idx": 390
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389297, "dur": 0,
+    "args": {
+      "External id": 8584,"Ev Idx": 391
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389298, "dur": 2,
+    "args": {
+      "External id": 8585,"Ev Idx": 392
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389298, "dur": 0,
+    "args": {
+      "External id": 8586,"Ev Idx": 393
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389298, "dur": 2,
+    "args": {
+      "External id": 8587,"Ev Idx": 394
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389300, "dur": 1,
+    "args": {
+      "External id": 8588,"Ev Idx": 395
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_unique2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389335, "dur": 1167,
+    "args": {
+      "External id": 8589,"Ev Idx": 396
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389520, "dur": 974,
+    "args": {
+      "External id": 8590,"Ev Idx": 397
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389521, "dur": 972,
+    "args": {
+      "External id": 8591,"Ev Idx": 398
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389522, "dur": 7,
+    "args": {
+      "External id": 8592,"Ev Idx": 399
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309389522, "dur": 7,
+    "args": {
+      "External id": 8593,"Ev Idx": 400
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::slice", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390496, "dur": 4,
+    "args": {
+      "External id": 8594,"Ev Idx": 401
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390498, "dur": 2,
+    "args": {
+      "External id": 8595,"Ev Idx": 402
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::argmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390521, "dur": 132,
+    "args": {
+      "External id": 8596,"Ev Idx": 403
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390658, "dur": 4,
+    "args": {
+      "External id": 8597,"Ev Idx": 404
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390661, "dur": 1,
+    "args": {
+      "External id": 8598,"Ev Idx": 405
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390663, "dur": 1,
+    "args": {
+      "External id": 8599,"Ev Idx": 406
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390664, "dur": 0,
+    "args": {
+      "External id": 8600,"Ev Idx": 407
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390668, "dur": 1,
+    "args": {
+      "External id": 8601,"Ev Idx": 408
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390669, "dur": 0,
+    "args": {
+      "External id": 8602,"Ev Idx": 409
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390669, "dur": 1,
+    "args": {
+      "External id": 8603,"Ev Idx": 410
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390670, "dur": 0,
+    "args": {
+      "External id": 8604,"Ev Idx": 411
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390672, "dur": 56,
+    "args": {
+      "External id": 8605,"Ev Idx": 412
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390731, "dur": 47,
+    "args": {
+      "External id": 8606,"Ev Idx": 413
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390732, "dur": 46,
+    "args": {
+      "External id": 8607,"Ev Idx": 414
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390781, "dur": 43,
+    "args": {
+      "External id": 8608,"Ev Idx": 415
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390825, "dur": 31,
+    "args": {
+      "External id": 8609,"Ev Idx": 416
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390825, "dur": 30,
+    "args": {
+      "External id": 8610,"Ev Idx": 417
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390857, "dur": 33,
+    "args": {
+      "External id": 8611,"Ev Idx": 418
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390891, "dur": 30,
+    "args": {
+      "External id": 8612,"Ev Idx": 419
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390891, "dur": 29,
+    "args": {
+      "External id": 8613,"Ev Idx": 420
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390924, "dur": 36,
+    "args": {
+      "External id": 8614,"Ev Idx": 421
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390961, "dur": 27,
+    "args": {
+      "External id": 8615,"Ev Idx": 422
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::rsub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390994, "dur": 43,
+    "args": {
+      "External id": 8616,"Ev Idx": 423
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309390997, "dur": 39,
+    "args": {
+      "External id": 8617,"Ev Idx": 424
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391000, "dur": 1,
+    "args": {
+      "External id": 8618,"Ev Idx": 425
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391000, "dur": 1,
+    "args": {
+      "External id": 8619,"Ev Idx": 426
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391043, "dur": 36,
+    "args": {
+      "External id": 8620,"Ev Idx": 427
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391086, "dur": 29,
+    "args": {
+      "External id": 8621,"Ev Idx": 428
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391119, "dur": 28,
+    "args": {
+      "External id": 8622,"Ev Idx": 429
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391150, "dur": 28,
+    "args": {
+      "External id": 8623,"Ev Idx": 430
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391205, "dur": 61,
+    "args": {
+      "External id": 8624,"Ev Idx": 431
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391270, "dur": 39,
+    "args": {
+      "External id": 8625,"Ev Idx": 432
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391313, "dur": 36,
+    "args": {
+      "External id": 8626,"Ev Idx": 433
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391352, "dur": 36,
+    "args": {
+      "External id": 8627,"Ev Idx": 434
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391391, "dur": 38,
+    "args": {
+      "External id": 8628,"Ev Idx": 435
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391431, "dur": 28,
+    "args": {
+      "External id": 8629,"Ev Idx": 436
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391461, "dur": 27,
+    "args": {
+      "External id": 8630,"Ev Idx": 437
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391491, "dur": 39,
+    "args": {
+      "External id": 8631,"Ev Idx": 438
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391496, "dur": 1,
+    "args": {
+      "External id": 8632,"Ev Idx": 439
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391497, "dur": 0,
+    "args": {
+      "External id": 8633,"Ev Idx": 440
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::scalar_tensor", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391532, "dur": 32,
+    "args": {
+      "External id": 8634,"Ev Idx": 441
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391534, "dur": 1,
+    "args": {
+      "External id": 8635,"Ev Idx": 442
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391536, "dur": 28,
+    "args": {
+      "External id": 8636,"Ev Idx": 443
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::unsqueeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391566, "dur": 1,
+    "args": {
+      "External id": 8637,"Ev Idx": 444
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391567, "dur": 0,
+    "args": {
+      "External id": 8638,"Ev Idx": 445
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391568, "dur": 456,
+    "args": {
+      "External id": 8639,"Ev Idx": 446
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391568, "dur": 456,
+    "args": {
+      "External id": 8640,"Ev Idx": 447
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391569, "dur": 1,
+    "args": {
+      "External id": 8641,"Ev Idx": 448
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309391569, "dur": 1,
+    "args": {
+      "External id": 8642,"Ev Idx": 449
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392026, "dur": 1,
+    "args": {
+      "External id": 8643,"Ev Idx": 450
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392026, "dur": 1,
+    "args": {
+      "External id": 8644,"Ev Idx": 451
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::index_put_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392029, "dur": 8,
+    "args": {
+      "External id": 8645,"Ev Idx": 452
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_index_put_impl_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392030, "dur": 6,
+    "args": {
+      "External id": 8646,"Ev Idx": 453
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392032, "dur": 0,
+    "args": {
+      "External id": 8647,"Ev Idx": 454
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392033, "dur": 1,
+    "args": {
+      "External id": 8648,"Ev Idx": 455
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392034, "dur": 0,
+    "args": {
+      "External id": 8649,"Ev Idx": 456
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392040, "dur": 63,
+    "args": {
+      "External id": 8650,"Ev Idx": 457
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392041, "dur": 62,
+    "args": {
+      "External id": 8651,"Ev Idx": 458
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392042, "dur": 0,
+    "args": {
+      "External id": 8652,"Ev Idx": 459
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392043, "dur": 59,
+    "args": {
+      "External id": 8653,"Ev Idx": 460
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392104, "dur": 29,
+    "args": {
+      "External id": 8654,"Ev Idx": 461
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392104, "dur": 29,
+    "args": {
+      "External id": 8655,"Ev Idx": 462
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392105, "dur": 1,
+    "args": {
+      "External id": 8656,"Ev Idx": 463
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392106, "dur": 26,
+    "args": {
+      "External id": 8657,"Ev Idx": 464
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::div", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392135, "dur": 39,
+    "args": {
+      "External id": 8658,"Ev Idx": 465
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392182, "dur": 1,
+    "args": {
+      "External id": 8659,"Ev Idx": 466
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392183, "dur": 0,
+    "args": {
+      "External id": 8660,"Ev Idx": 467
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392200, "dur": 43,
+    "args": {
+      "External id": 8661,"Ev Idx": 468
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392248, "dur": 31,
+    "args": {
+      "External id": 8662,"Ev Idx": 469
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392283, "dur": 30,
+    "args": {
+      "External id": 8663,"Ev Idx": 470
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392316, "dur": 29,
+    "args": {
+      "External id": 8664,"Ev Idx": 471
+    }
+  },
+  {
+    "ph": "X", "cat": "user_annotation", "name": "[pl][module]torchmetrics.classification.f_beta.MulticlassF1Score: f1_score", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392389, "dur": 2704,
+    "args": {
+      "External id": 8665,"Ev Idx": 472
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392407, "dur": 1,
+    "args": {
+      "External id": 8666,"Ev Idx": 473
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392410, "dur": 7,
+    "args": {
+      "External id": 8667,"Ev Idx": 474
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392410, "dur": 0,
+    "args": {
+      "External id": 8668,"Ev Idx": 475
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392411, "dur": 6,
+    "args": {
+      "External id": 8669,"Ev Idx": 476
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392418, "dur": 1,
+    "args": {
+      "External id": 8670,"Ev Idx": 477
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392421, "dur": 0,
+    "args": {
+      "External id": 8671,"Ev Idx": 478
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392422, "dur": 2,
+    "args": {
+      "External id": 8672,"Ev Idx": 479
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392422, "dur": 0,
+    "args": {
+      "External id": 8673,"Ev Idx": 480
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392422, "dur": 2,
+    "args": {
+      "External id": 8674,"Ev Idx": 481
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392425, "dur": 0,
+    "args": {
+      "External id": 8675,"Ev Idx": 482
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392426, "dur": 1,
+    "args": {
+      "External id": 8676,"Ev Idx": 483
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392427, "dur": 2,
+    "args": {
+      "External id": 8677,"Ev Idx": 484
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392427, "dur": 1,
+    "args": {
+      "External id": 8678,"Ev Idx": 485
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392428, "dur": 1,
+    "args": {
+      "External id": 8679,"Ev Idx": 486
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392429, "dur": 0,
+    "args": {
+      "External id": 8680,"Ev Idx": 487
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392431, "dur": 0,
+    "args": {
+      "External id": 8681,"Ev Idx": 488
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392432, "dur": 1,
+    "args": {
+      "External id": 8682,"Ev Idx": 489
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392432, "dur": 0,
+    "args": {
+      "External id": 8683,"Ev Idx": 490
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392432, "dur": 1,
+    "args": {
+      "External id": 8684,"Ev Idx": 491
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392434, "dur": 0,
+    "args": {
+      "External id": 8685,"Ev Idx": 492
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_unique2", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392451, "dur": 929,
+    "args": {
+      "External id": 8686,"Ev Idx": 493
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392602, "dur": 775,
+    "args": {
+      "External id": 8687,"Ev Idx": 494
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392602, "dur": 774,
+    "args": {
+      "External id": 8688,"Ev Idx": 495
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392603, "dur": 1,
+    "args": {
+      "External id": 8689,"Ev Idx": 496
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309392603, "dur": 1,
+    "args": {
+      "External id": 8690,"Ev Idx": 497
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::slice", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393378, "dur": 2,
+    "args": {
+      "External id": 8691,"Ev Idx": 498
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393379, "dur": 1,
+    "args": {
+      "External id": 8692,"Ev Idx": 499
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::argmax", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393393, "dur": 77,
+    "args": {
+      "External id": 8693,"Ev Idx": 500
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393473, "dur": 2,
+    "args": {
+      "External id": 8694,"Ev Idx": 501
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393474, "dur": 0,
+    "args": {
+      "External id": 8695,"Ev Idx": 502
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393476, "dur": 0,
+    "args": {
+      "External id": 8696,"Ev Idx": 503
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393476, "dur": 0,
+    "args": {
+      "External id": 8697,"Ev Idx": 504
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393478, "dur": 1,
+    "args": {
+      "External id": 8698,"Ev Idx": 505
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393479, "dur": 0,
+    "args": {
+      "External id": 8699,"Ev Idx": 506
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::flatten", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393480, "dur": 0,
+    "args": {
+      "External id": 8700,"Ev Idx": 507
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393480, "dur": 0,
+    "args": {
+      "External id": 8701,"Ev Idx": 508
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393481, "dur": 39,
+    "args": {
+      "External id": 8702,"Ev Idx": 509
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393522, "dur": 33,
+    "args": {
+      "External id": 8703,"Ev Idx": 510
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393522, "dur": 32,
+    "args": {
+      "External id": 8704,"Ev Idx": 511
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393571, "dur": 33,
+    "args": {
+      "External id": 8705,"Ev Idx": 512
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393605, "dur": 28,
+    "args": {
+      "External id": 8706,"Ev Idx": 513
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393605, "dur": 28,
+    "args": {
+      "External id": 8707,"Ev Idx": 514
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::ne", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393635, "dur": 31,
+    "args": {
+      "External id": 8708,"Ev Idx": 515
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393667, "dur": 27,
+    "args": {
+      "External id": 8709,"Ev Idx": 516
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393667, "dur": 27,
+    "args": {
+      "External id": 8710,"Ev Idx": 517
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393696, "dur": 27,
+    "args": {
+      "External id": 8711,"Ev Idx": 518
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393725, "dur": 25,
+    "args": {
+      "External id": 8712,"Ev Idx": 519
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::rsub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393754, "dur": 30,
+    "args": {
+      "External id": 8713,"Ev Idx": 520
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sub", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393755, "dur": 29,
+    "args": {
+      "External id": 8714,"Ev Idx": 521
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393757, "dur": 0,
+    "args": {
+      "External id": 8715,"Ev Idx": 522
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393757, "dur": 0,
+    "args": {
+      "External id": 8716,"Ev Idx": 523
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393788, "dur": 29,
+    "args": {
+      "External id": 8717,"Ev Idx": 524
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393822, "dur": 28,
+    "args": {
+      "External id": 8718,"Ev Idx": 525
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393853, "dur": 28,
+    "args": {
+      "External id": 8719,"Ev Idx": 526
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393884, "dur": 28,
+    "args": {
+      "External id": 8720,"Ev Idx": 527
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393928, "dur": 50,
+    "args": {
+      "External id": 8721,"Ev Idx": 528
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309393982, "dur": 40,
+    "args": {
+      "External id": 8722,"Ev Idx": 529
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394025, "dur": 40,
+    "args": {
+      "External id": 8723,"Ev Idx": 530
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cat", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394067, "dur": 36,
+    "args": {
+      "External id": 8724,"Ev Idx": 531
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394107, "dur": 32,
+    "args": {
+      "External id": 8725,"Ev Idx": 532
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394141, "dur": 28,
+    "args": {
+      "External id": 8726,"Ev Idx": 533
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::sum", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394171, "dur": 28,
+    "args": {
+      "External id": 8727,"Ev Idx": 534
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394203, "dur": 37,
+    "args": {
+      "External id": 8728,"Ev Idx": 535
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394207, "dur": 1,
+    "args": {
+      "External id": 8729,"Ev Idx": 536
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394207, "dur": 0,
+    "args": {
+      "External id": 8730,"Ev Idx": 537
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394243, "dur": 28,
+    "args": {
+      "External id": 8731,"Ev Idx": 538
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394245, "dur": 1,
+    "args": {
+      "External id": 8732,"Ev Idx": 539
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394246, "dur": 0,
+    "args": {
+      "External id": 8733,"Ev Idx": 540
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394273, "dur": 27,
+    "args": {
+      "External id": 8734,"Ev Idx": 541
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394275, "dur": 1,
+    "args": {
+      "External id": 8735,"Ev Idx": 542
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394276, "dur": 0,
+    "args": {
+      "External id": 8736,"Ev Idx": 543
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394301, "dur": 35,
+    "args": {
+      "External id": 8737,"Ev Idx": 544
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394338, "dur": 32,
+    "args": {
+      "External id": 8738,"Ev Idx": 545
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::eq", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394372, "dur": 38,
+    "args": {
+      "External id": 8739,"Ev Idx": 546
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394377, "dur": 0,
+    "args": {
+      "External id": 8740,"Ev Idx": 547
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394377, "dur": 0,
+    "args": {
+      "External id": 8741,"Ev Idx": 548
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::scalar_tensor", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394412, "dur": 28,
+    "args": {
+      "External id": 8742,"Ev Idx": 549
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394412, "dur": 1,
+    "args": {
+      "External id": 8743,"Ev Idx": 550
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394413, "dur": 27,
+    "args": {
+      "External id": 8744,"Ev Idx": 551
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::unsqueeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394441, "dur": 1,
+    "args": {
+      "External id": 8745,"Ev Idx": 552
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394442, "dur": 0,
+    "args": {
+      "External id": 8746,"Ev Idx": 553
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394443, "dur": 420,
+    "args": {
+      "External id": 8747,"Ev Idx": 554
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394443, "dur": 420,
+    "args": {
+      "External id": 8748,"Ev Idx": 555
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394443, "dur": 1,
+    "args": {
+      "External id": 8749,"Ev Idx": 556
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394444, "dur": 0,
+    "args": {
+      "External id": 8750,"Ev Idx": 557
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394864, "dur": 1,
+    "args": {
+      "External id": 8751,"Ev Idx": 558
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394864, "dur": 1,
+    "args": {
+      "External id": 8752,"Ev Idx": 559
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::index_put_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394866, "dur": 4,
+    "args": {
+      "External id": 8753,"Ev Idx": 560
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_index_put_impl_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394866, "dur": 4,
+    "args": {
+      "External id": 8754,"Ev Idx": 561
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394867, "dur": 0,
+    "args": {
+      "External id": 8755,"Ev Idx": 562
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::reshape", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394868, "dur": 1,
+    "args": {
+      "External id": 8756,"Ev Idx": 563
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_reshape_alias", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394868, "dur": 1,
+    "args": {
+      "External id": 8757,"Ev Idx": 564
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::div", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394873, "dur": 46,
+    "args": {
+      "External id": 8758,"Ev Idx": 565
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394925, "dur": 1,
+    "args": {
+      "External id": 8759,"Ev Idx": 566
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394926, "dur": 0,
+    "args": {
+      "External id": 8760,"Ev Idx": 567
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394937, "dur": 35,
+    "args": {
+      "External id": 8761,"Ev Idx": 568
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309394977, "dur": 32,
+    "args": {
+      "External id": 8762,"Ev Idx": 569
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395012, "dur": 30,
+    "args": {
+      "External id": 8763,"Ev Idx": 570
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395045, "dur": 29,
+    "args": {
+      "External id": 8764,"Ev Idx": 571
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395132, "dur": 7,
+    "args": {
+      "External id": 8765,"Ev Idx": 572
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395132, "dur": 1,
+    "args": {
+      "External id": 8766,"Ev Idx": 573
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395134, "dur": 5,
+    "args": {
+      "External id": 8767,"Ev Idx": 574
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395140, "dur": 0,
+    "args": {
+      "External id": 8768,"Ev Idx": 575
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395144, "dur": 0,
+    "args": {
+      "External id": 8769,"Ev Idx": 576
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395146, "dur": 0,
+    "args": {
+      "External id": 8770,"Ev Idx": 577
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395146, "dur": 0,
+    "args": {
+      "External id": 8771,"Ev Idx": 578
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395155, "dur": 0,
+    "args": {
+      "External id": 8772,"Ev Idx": 579
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395182, "dur": 1,
+    "args": {
+      "External id": 8773,"Ev Idx": 580
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395190, "dur": 46,
+    "args": {
+      "External id": 8774,"Ev Idx": 581
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395194, "dur": 0,
+    "args": {
+      "External id": 8775,"Ev Idx": 582
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395194, "dur": 0,
+    "args": {
+      "External id": 8776,"Ev Idx": 583
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395238, "dur": 27,
+    "args": {
+      "External id": 8777,"Ev Idx": 584
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395269, "dur": 27,
+    "args": {
+      "External id": 8778,"Ev Idx": 585
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395272, "dur": 0,
+    "args": {
+      "External id": 8779,"Ev Idx": 586
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395272, "dur": 0,
+    "args": {
+      "External id": 8780,"Ev Idx": 587
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395314, "dur": 6,
+    "args": {
+      "External id": 8781,"Ev Idx": 588
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395314, "dur": 1,
+    "args": {
+      "External id": 8782,"Ev Idx": 589
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395315, "dur": 5,
+    "args": {
+      "External id": 8783,"Ev Idx": 590
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395320, "dur": 1,
+    "args": {
+      "External id": 8784,"Ev Idx": 591
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395322, "dur": 0,
+    "args": {
+      "External id": 8785,"Ev Idx": 592
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395323, "dur": 1,
+    "args": {
+      "External id": 8786,"Ev Idx": 593
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395323, "dur": 1,
+    "args": {
+      "External id": 8787,"Ev Idx": 594
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395327, "dur": 1,
+    "args": {
+      "External id": 8788,"Ev Idx": 595
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395337, "dur": 0,
+    "args": {
+      "External id": 8789,"Ev Idx": 596
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395341, "dur": 33,
+    "args": {
+      "External id": 8790,"Ev Idx": 597
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395345, "dur": 0,
+    "args": {
+      "External id": 8791,"Ev Idx": 598
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395345, "dur": 0,
+    "args": {
+      "External id": 8792,"Ev Idx": 599
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395375, "dur": 28,
+    "args": {
+      "External id": 8793,"Ev Idx": 600
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395406, "dur": 26,
+    "args": {
+      "External id": 8794,"Ev Idx": 601
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395409, "dur": 0,
+    "args": {
+      "External id": 8795,"Ev Idx": 602
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395409, "dur": 0,
+    "args": {
+      "External id": 8796,"Ev Idx": 603
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395447, "dur": 5,
+    "args": {
+      "External id": 8797,"Ev Idx": 604
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395447, "dur": 1,
+    "args": {
+      "External id": 8798,"Ev Idx": 605
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395448, "dur": 4,
+    "args": {
+      "External id": 8799,"Ev Idx": 606
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395453, "dur": 0,
+    "args": {
+      "External id": 8800,"Ev Idx": 607
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395454, "dur": 0,
+    "args": {
+      "External id": 8801,"Ev Idx": 608
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::squeeze", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395455, "dur": 1,
+    "args": {
+      "External id": 8802,"Ev Idx": 609
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395455, "dur": 1,
+    "args": {
+      "External id": 8803,"Ev Idx": 610
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::detach", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395459, "dur": 0,
+    "args": {
+      "External id": 8804,"Ev Idx": 611
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395467, "dur": 0,
+    "args": {
+      "External id": 8805,"Ev Idx": 612
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::mul", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395471, "dur": 34,
+    "args": {
+      "External id": 8806,"Ev Idx": 613
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395474, "dur": 1,
+    "args": {
+      "External id": 8807,"Ev Idx": 614
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395475, "dur": 0,
+    "args": {
+      "External id": 8808,"Ev Idx": 615
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395507, "dur": 25,
+    "args": {
+      "External id": 8809,"Ev Idx": 616
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::add", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395535, "dur": 28,
+    "args": {
+      "External id": 8810,"Ev Idx": 617
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::item", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395538, "dur": 1,
+    "args": {
+      "External id": 8811,"Ev Idx": 618
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_local_scalar_dense", "pid": 25739, "tid": 351414,
+    "ts": 1687025309395538, "dur": 1,
+    "args": {
+      "External id": 8812,"Ev Idx": 619
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 353271,
+    "args": {
+      "name": "thread 353271 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 353271,
+    "args": {
+      "sort_index": 353271
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 351414,
+    "args": {
+      "name": "thread 351414 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 351414,
+    "args": {
+      "sort_index": 351414
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 353271,
+    "args": {
+      "name": "thread 353271 ()"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1687025309376309, "pid": 25739, "tid": 353271,
+    "args": {
+      "sort_index": 353271
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 1687025309376237, "dur": 19377,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1687025309376237,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 1687025309376237
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 1687025309395836
+  }
+  ],
+  "traceName": "./dashboard/profiler1.1/Pranavs-MacBook-Air.local_25739.1687025309405.pt.trace.json"
+}
