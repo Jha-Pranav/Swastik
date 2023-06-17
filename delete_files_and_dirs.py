@@ -11,7 +11,7 @@ def delete_files_and_dirs(path):
         ".DS_Store",
         "__pycache__",
         "*-checkpoint.ipynb",
-        ".ipynb_checkpoints"
+        ".ipynb_checkpoints",
     ]
 
     for root, dirs, files in os.walk(path):

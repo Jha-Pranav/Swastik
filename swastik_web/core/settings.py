@@ -20,15 +20,12 @@ env = environ.Env(
 from pathlib import Path
 
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
-
-
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 
 # Quick-start development settings - unsuitable for production
@@ -38,11 +35,20 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = "django-insecure-v)%0s4w!6e+w%ua+=amo7uk2_azzk7wsv2+*j9i!uoijc=p8c-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = env("DEBUG")
 
 # load production server from .env
-ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
-CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + env('SERVER', default='127.0.0.1') ]
+ALLOWED_HOSTS = [
+    "localhost",
+    "localhost:85",
+    "127.0.0.1",
+    env("SERVER", default="127.0.0.1"),
+]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:85",
+    "http://127.0.0.1",
+    "https://" + env("SERVER", default="127.0.0.1"),
+]
 
 
 # Application definition
@@ -54,13 +60,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'apps.home',  # Enable the inner home (home)
-    'apps.chatbot',
-    'apps.quiz',
-    'apps.loaddata',
-    'django_extensions',
-    'django_pandas',
-    
+    "apps.home",  # Enable the inner home (home)
+    "apps.chatbot",
+    "apps.quiz",
+    "apps.loaddata",
+    "django_extensions",
+    "django_pandas",
 ]
 
 MIDDLEWARE = [
@@ -71,10 +76,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-
 ]
 
-ROOT_URLCONF = 'core.urls'
+ROOT_URLCONF = "core.urls"
 LOGIN_REDIRECT_URL = "home"  # Route defined in home/urls.py
 LOGOUT_REDIRECT_URL = "home"  # Route defined in home/urls.py
 TEMPLATE_DIR = os.path.join(CORE_DIR, "apps/templates")  # ROOT dir for templates
@@ -91,9 +95,9 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
-            'libraries': {
-                'tagger': 'apps.home.templatetags.tagger',
-                'custom_filters': 'apps.home.templatetags.custom_filters',
+            "libraries": {
+                "tagger": "apps.home.templatetags.tagger",
+                "custom_filters": "apps.home.templatetags.custom_filters",
             },
         },
     },
@@ -105,22 +109,22 @@ WSGI_APPLICATION = "core.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if os.environ.get('DB_ENGINE') and os.environ.get('DB_ENGINE') == "mysql":
-    DATABASES = { 
-      'default': {
-        'ENGINE'  : 'django.db.backends.mysql', 
-        'NAME'    : os.getenv('DB_NAME'     , 'appseed_db'),
-        'USER'    : os.getenv('DB_USERNAME' , 'appseed_db_usr'),
-        'PASSWORD': os.getenv('DB_PASS'     , 'pass'),
-        'HOST'    : os.getenv('DB_HOST'     , 'localhost'),
-        'PORT'    : os.getenv('DB_PORT'     , 3306),
-        }, 
+if os.environ.get("DB_ENGINE") and os.environ.get("DB_ENGINE") == "mysql":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": os.getenv("DB_NAME", "appseed_db"),
+            "USER": os.getenv("DB_USERNAME", "appseed_db_usr"),
+            "PASSWORD": os.getenv("DB_PASS", "pass"),
+            "HOST": os.getenv("DB_HOST", "localhost"),
+            "PORT": os.getenv("DB_PORT", 3306),
+        },
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'db.sqlite3',
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": "db.sqlite3",
         }
     }
 
@@ -129,30 +133,29 @@ else:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.Argon2PasswordHasher',
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-    'django.contrib.auth.hashers.BCryptPasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    "django.contrib.auth.hashers.Argon2PasswordHasher",
+    "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
+    "django.contrib.auth.hashers.BCryptPasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2PasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
 ]
 
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-        'OPTIONS':{'min_length':9}
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "OPTIONS": {"min_length": 9},
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
 
 
 # Internationalization
@@ -167,19 +170,15 @@ USE_I18N = True
 USE_TZ = True
 
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(CORE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(CORE_DIR, 'apps/static'),
-)
+STATIC_ROOT = os.path.join(CORE_DIR, "staticfiles")
+STATIC_URL = "/static/"
+STATICFILES_DIRS = (os.path.join(CORE_DIR, "apps/static"),)
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-

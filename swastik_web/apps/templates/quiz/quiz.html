@@ -103,137 +103,142 @@
 <script src="/static/assets/js/master.js"></script>
 
 <script>
-    const url = window.location.href
-    const quizBox = document.getElementById('quiz-box')
-    const resultBox = document.getElementById('result-box')
-    const totalScore = document.getElementById('total')
+const url = window.location.href;
+const quizBox = document.getElementById('quiz-box');
+const resultBox = document.getElementById('result-box');
+const totalScore = document.getElementById('total');
+
+$.ajax({
+    type: 'GET',
+    url: `${url}data/`,
+    success: function(response) {
+        const data = response.data;
+        data.forEach(ele => {
+            for (const [question, answers] of Object.entries(ele)) {
+                quizBox.innerHTML += `
+                    <hr class="ques" style="display:none">
+                    <div class="mb-2 ques" style="display:none">
+                        <b>${question}</b>
+                    </div>
+                `;
+                console.log(quizBox.innerHTML);
+                answers.forEach(answer => {
+                    quizBox.innerHTML += `
+                        <div>
+                            <input type="radio" class="ans" style="display:none" id="${question}-${answer}" name="${question}" value="${answer}">
+                            <label for="${question}-${answer}" style="display:none" class="answer">${answer}</label>
+                        </div>
+                    `;
+                });
+            }
+        });
+    },
+    error: function(error) {
+        console.log("Error !! - " + error);
+    }
+});
+
+// timer countdown
+document.addEventListener('DOMContentLoaded', () => {
+    const timeLeftDisplay = document.querySelector('#time-left');
+    const startbtn = document.querySelector('.start-button');
+    let timeLeft = '{{quiz.time}}';
+
+    function countDown() {
+        setInterval(function() {
+            if (timeLeft <= 0) {
+                clearInterval(timeLeft = 0);
+            }
+            if (timeLeft === 0) {
+                $(".ans").attr("disabled", true);
+            }
+            timeLeftDisplay.innerHTML = timeLeft;
+            timeLeft--;
+        }, 1000);
+    }
+    startbtn.addEventListener('click', countDown);
+});
+
+const quizForm = document.getElementById('quiz-form');
+const csrf = document.getElementsByName('csrfmiddlewaretoken');
+
+const sendData = () => {
+    const elements = [...document.getElementsByClassName('ans')];
+    const data = {};
+    data['csrfmiddlewaretoken'] = csrf[0].value;
+    elements.forEach(el => {
+        if (el.checked) {
+            data[el.name] = el.value;
+        } else {
+            if (!data[el.name]) {
+                data[el.name] = null;
+            }
+        }
+    });
 
     $.ajax({
-        type: 'GET',
-        url: `${url}data/`,
-        success: function(response){
-
+        type: 'POST',
+        url: `${url}save/`,
+        data: data,
+        success: function(response) {
             const data = response.data;
-
             data.forEach(ele => {
-                for (const [question, answers] of Object.entries(ele)){
-
+                for (const [question, answers] of Object.entries(ele)) {
                     quizBox.innerHTML += `
                         <hr class="ques" style="display:none">
                         <div class="mb-2 ques" style="display:none">
                             <b>${question}</b>
                         </div>
                     `;
-                    console.log(quizBox.innerHTML)
-                    answers.forEach(answer=>{
+                    answers.forEach(answer => {
                         quizBox.innerHTML += `
                             <div>
                                 <input type="radio" class="ans" style="display:none" id="${question}-${answer}" name="${question}" value="${answer}">
-                                <label for="${question}-${answer}" style="display:none" class="answer">${answer}</label>
+                                <label for="${question}" style="display:none" class="answer">${answer}</label>
                             </div>
                         `;
                     });
                 }
             });
+
+            {% comment %} $(document).ready(function() {
+                $('.start-button').click(function() {
+                  console.log('Start Quiz');
+                  $(".ques").show();
+                  $(".ans").show();
+                  $(".answer").show();
+                });
+              }); {% endcomment %}
         },
-        error: function(error){
-            console.log(error)
+        error: function(error) {
+            console.log(error);
         }
     });
+};
 
-    // timer countdown
-    document.addEventListener('DOMContentLoaded', () => {
-        const timeLeftDisplay = document.querySelector('#time-left');
-        const startbtn = document.querySelector('.start-button');
-        let timeLeft = {{quiz.time}} ;
+quizForm.addEventListener('submit', e => {
+    e.preventDefault();
+    console.log('Inside Quiz Form');
+    sendData();
+});
 
-        function countDown() {
-            setInterval(function () {
-                if (timeLeft <= 0) {
-                    clearInterval(timeLeft = 0);
-                }
-                if (timeLeft === 0) {
-                    $(".ans").attr("disabled", true);
-                }
-                timeLeftDisplay.innerHTML = timeLeft;
-                timeLeft--;
-            }, 1000);
-        }
-        startbtn.addEventListener('click', countDown);
-    });
-
-    const quizForm = document.getElementById('quiz-form')
-    const csrf = document.getElementsByName('csrfmiddlewaretoken')
-
-    const sendData = () => {
-        const elements = [...document.getElementsByClassName('ans')]
-        const data = {}
-        data['csrfmiddlewaretoken'] = csrf[0].value
-        elements.forEach(el=>{
-            if (el.checked) {
-                data[el.name] = el.value
-            } else {
-                if (!data[el.name]) {
-                    data[el.name] = null
-                }
-            }
-        });
-
-        $.ajax({
-            type: 'POST',
-            url: `${url}save/`,
-            data: data,
-success: function(response){
-    const data = response.data;
-    data.forEach(ele => {
-        for (const [question, answers] of Object.entries(ele)){
-            quizBox.innerHTML += `
-                <hr class="ques" style="display:none">
-                <div class="mb-2 ques" style="display:none">
-                    <b>${question}</b>
-                </div>
-            `;
-            answers.forEach(answer=>{
-                quizBox.innerHTML += `
-                    <div>
-                        <input type="radio" class="ans" style="display:none" id="${question}-${answer}" name="${question}" value="${answer}">
-                        <label for="${question}" style="display:none" class="answer">${answer}</label>
-                    </div>
-                `;
-            });
-        }
-    });
-
-    $('.start-button').click(function () {
-        
+$(document).ready(function() {
+    console.log('Hit Start Quiz')
+    $('.start-button').click(function() {
+        console.log('Start Quiz');
         $(".ques").show();
         $(".ans").show();
         $(".answer").show();
+
+        $(".start").hide();
+        $("#button1").show();
     });
-}
-
-            error: function(error){
-                console.log(error)
-            }
-        })
-    }
-
-    quizForm.addEventListener('submit', e=>{
-        e.preventDefault()
-
-        sendData()
+    $("#button1").click(function() {
+        console.log('Submit Test')
+        $(".total").show();
+        $("#hide-time").hide();
     });
-
-    $(document).ready(function () {
-        $('.start-button').click(function () {
-            $(".start").hide();
-            $("#button1").show();
-        });
-        $("#button1").click(function () {
-            $(".total").show();
-            $("#hide-time").hide();
-        });
-    });
+});
 
 </script>
 

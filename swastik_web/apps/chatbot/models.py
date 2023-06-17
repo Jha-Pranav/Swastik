@@ -7,8 +7,10 @@ class ChatMessage(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.timestamp} {"User" if self.from_user else "Chatbot"}: {self.text}'
-    
+        return (
+            f'{self.timestamp} {"User" if self.from_user else "Chatbot"}: {self.text}'
+        )
+
     @classmethod
     def clear_chat_history(cls):
         cls.objects.all().delete()

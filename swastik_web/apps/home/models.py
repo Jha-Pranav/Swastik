@@ -1,6 +1,7 @@
 from django.db import models
 from django_pandas.managers import DataFrameManager
 
+
 class AutoLoadData(models.Model):
     objects = DataFrameManager()
 
@@ -18,18 +19,19 @@ class AutoLoadData(models.Model):
 
     @classmethod
     def get_field_type(cls, dtype):
-        if dtype == 'int64':
+        if dtype == "int64":
             return models.IntegerField()
-        elif dtype == 'float64':
+        elif dtype == "float64":
             return models.FloatField()
-        elif dtype == 'bool':
+        elif dtype == "bool":
             return models.BooleanField()
         else:
             return models.CharField(max_length=255)
+
 
 # from apps.algo_apps.load_pandas_df import food_composition_table
 
 # # if __name__=="__main__":
 # data =  food_composition_table.read_nutritional_data()
 # AutoLoadData.add_columns_from_dataframe(data)
-# AutoLoadData.objects.from_dataframe(data)   
+# AutoLoadData.objects.from_dataframe(data)
